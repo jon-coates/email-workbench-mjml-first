@@ -1,0 +1,28 @@
+{
+  "name": "email-workbench-mjml-first",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm-run-all -p static watch",
+    "build": "node scripts/build.js",
+    "watch": "node scripts/watch.js",
+    "static": "node scripts/static.js",
+    "presend": "npm run build",
+    "send": "node scripts/send.js --file dist/new-deal-notification.example.html --to you@example.com --subject \"Test: Price Drop\"",
+    "clean": "rimraf dist && mkdir -p dist"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "express": "^4.19.2",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "handlebars": "^4.7.8",
+    "mjml": "^4.15.3",
+    "nodemailer": "^6.9.14",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5"
+  }
+}

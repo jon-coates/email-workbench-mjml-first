@@ -1,0 +1,38 @@
+{
+  "preview": "New price drops on popular models",
+  "headline": "Latest price drops \u2014 time to take another look",
+  "customer": {
+    "firstName": "Jon"
+  },
+  "brand": {
+    "name": "CarExpert",
+    "url": "https://www.carexpert.com.au",
+    "logoUrl": "http://localhost:4000/logos/carexpert.png",
+    "address": "Level 6, 200 Adelaide Street, Brisbane QLD 4000"
+  },
+  "unsubscribeUrl": "https://example.com/unsubscribe",
+  "cta": {
+    "label": "See all deals",
+    "url": "https://www.carexpert.com.au"
+  },
+  "vehicles": [
+    {
+      "name": "Toyota RAV4 GX Hybrid (2WD)",
+      "imageUrl": "http://localhost:4000/vehicles/rav4.jpg",
+      "badge": "Hybrid",
+      "summary": "2.5L Hybrid \u2022 Auto \u2022 White Pearl",
+      "wasPrice": "$45,990",
+      "nowPrice": "$43,490",
+      "driveAway": true,
+      "url": "https://www.carexpert.com.au"
+    },
+    {
+      "name": "Kia Sportage S",
+      "imageUrl": "http://localhost:4000/vehicles/sportage.jpg",
+      "summary": "2.0L Petrol \u2022 Auto \u2022 Steel Grey",
+      "price": "$36,990",
+      "driveAway": true,
+      "url": "https://www.carexpert.com.au"
+    }
+  ]
+}
