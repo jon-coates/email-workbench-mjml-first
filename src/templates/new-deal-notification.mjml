@@ -34,16 +34,16 @@
         </mj-text>
 
         <!-- Deadline (standout card) -->
-        <mj-include path="partials/deadline.mjml" />
+        <mj-include path="../partials/deadline.mjml" />
 
         <!-- New vehicle card (conditional) -->
         {{#if deal.isNewCarDeal}}
-          <mj-include path="partials/vehicle-card.mjml" />
+          <mj-include path="../partials/new-vehicle-card.mjml" />
         {{/if}}
 
         <!-- Trade-in card (conditional) -->
         {{#if deal.hasTradeIn}}
-          <mj-include path="partials/tradein-card.mjml" />
+          <mj-include path="../partials/tradein-card.mjml" />
         {{/if}}
 
         <!-- Fallback when no vehicle + no trade -->
@@ -59,6 +59,8 @@
         <mj-button href="{{deal.url}}" align="center" width="100%" padding="24px 0 0 0">
           View in Exchange
         </mj-button>
+
+        <mj-include path="../partials/footer.mjml" />
 
       </mj-column>
     </mj-section>

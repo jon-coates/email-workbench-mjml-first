@@ -1,0 +1,27 @@
+<mj-table border="1px solid #f59e0b" padding="16px 24px">
+  <tr>
+    <td style="background-color: #fef3c7; border-radius: 8px; font-weight: bold; font-size: 16px; color: #92400e; padding: 16px 24px 8px 24px;">
+      Trade-in Vehicle
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color: #fef3c7; border-radius: 8px; font-size: 15px; line-height: 20px; padding: 0 24px 4px 24px;">
+      <strong>{{deal.tradeIn.make}} {{deal.tradeIn.model}}</strong>
+      {{#if deal.tradeIn.variant}} - {{deal.tradeIn.variant}}{{/if}}
+    </td>
+  </tr>
+  {{#if deal.tradeIn.monthYear}}
+  <tr>
+    <td style="background-color: #fef3c7; border-radius: 8px; font-size: 14px; color: #92400e; padding: 0 24px 4px 24px;">
+      Year: {{deal.tradeIn.monthYear}}
+    </td>
+  </tr>
+  {{/if}}
+  {{#if deal.tradeIn.note}}
+  <tr>
+    <td style="background-color: #fef3c7; border-radius: 8px; font-size: 14px; color: #92400e; padding: 0 24px 16px 24px;">
+      Note: {{deal.tradeIn.note}}
+    </td>
+  </tr>
+  {{/if}}
+</mj-table>

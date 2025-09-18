@@ -1,0 +1,34 @@
+<mj-table border="1px solid #e5e7eb" padding="16px 24px">
+  <tr>
+    <td style="background-color: #f8fafc; border-radius: 8px; font-weight: bold; font-size: 16px; color: #1f2937; padding: 16px 24px 8px 24px;">
+      New Vehicle Request
+    </td>
+  </tr>
+  <tr>
+    <td style="background-color: #f8fafc; border-radius: 8px; font-size: 15px; line-height: 20px; padding: 0 24px 4px 24px;">
+      <strong>{{deal.vehicle.make}} {{deal.vehicle.model}}</strong>
+      {{#if deal.vehicle.variant}} - {{deal.vehicle.variant}}{{/if}}
+    </td>
+  </tr>
+  {{#if deal.vehicle.colour}}
+  <tr>
+    <td style="background-color: #f8fafc; border-radius: 8px; font-size: 14px; color: #6b7280; padding: 0 24px 4px 24px;">
+      Colour: {{deal.vehicle.colour}}
+    </td>
+  </tr>
+  {{/if}}
+  {{#if deal.vehicle.quantity}}
+  <tr>
+    <td style="background-color: #f8fafc; border-radius: 8px; font-size: 14px; color: #6b7280; padding: 0 24px 4px 24px;">
+      Quantity: {{deal.vehicle.quantity}}
+    </td>
+  </tr>
+  {{/if}}
+  {{#if deal.vehicle.note}}
+  <tr>
+    <td style="background-color: #f8fafc; border-radius: 8px; font-size: 14px; color: #6b7280; padding: 0 24px 16px 24px;">
+      Note: {{deal.vehicle.note}}
+    </td>
+  </tr>
+  {{/if}}
+</mj-table>
