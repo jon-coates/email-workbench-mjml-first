@@ -5,12 +5,12 @@
     <mj-preview>⏱️ Quote by {{deal.dealDeadline}} • 📍 Delivery location {{deal.customerLocation}} • 🗓️ Delivery Date {{deal.vehicle.dateRequired}} • </mj-preview>
   </mj-head>
 
-  <mj-body background-color="#E7E7E8">
+  <mj-body background-color="#F9FAFB">
   <mj-include path="../partials/header.mjml" />
 
     <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
-        <mj-text padding="0 0 16px 0">Hi {{dealer.firstName}},</mj-text>
+        <mj-text padding="0 0 8px 0">Hi {{dealer.firstName}},</mj-text>
         <mj-text>A new customer enquiry is ready for you to review and quote on.</mj-text>
        </mj-column>
       </mj-section>

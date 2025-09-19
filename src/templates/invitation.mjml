@@ -1,0 +1,59 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Anek Latin, Arial, sans-serif" />
+      <mj-text color="#212B36" font-size="15px" line-height="22px" padding="0" />
+      <mj-section padding="0" />
+      <mj-column padding="0" />
+      <mj-button background-color="#000000" color="#ffffff" font-weight="700" font-size="16px" border-radius="8px" />
+    </mj-attributes>
+    <mj-include path="../partials/responsive-styles.mjml" />
+
+    <mj-preview>Activate your CarExpert Exchange account</mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+    <mj-include path="../partials/header.mjml" />
+
+    <mj-section padding="24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0 0 16px 0">Hi {{dealer.firstName}} 👋,</mj-text>
+
+        <mj-text>
+          You have been invited to <strong>CarExpert Exchange</strong>, the platform where you’ll receive and manage quotes for CarExpert buyers.
+        </mj-text>
+
+        <mj-text padding="12px 0 0 0">
+          To activate your account and get started, click the button below:
+        </mj-text>
+
+        <mj-button href="{{deal.url}}" align="center" font-size="18px" padding="16px 0 0 0">
+          Activate my account
+        </mj-button>
+
+        <mj-text padding="8px 0 0" font-size="12px" line-height="16px" color="#6b7280" align="center">
+          Can't click the button?
+          <a href="{{deal.url}}" style="color:#6b7280; text-decoration:underline;">Open the invitation</a>
+        </mj-text>
+
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+
+        <mj-text padding="0 0 8px 0">
+          <strong>Tip:</strong> Add <a href="https://exchange.carexpert.com.au" color="#000000" text-decoration="underline">exchange.carexpert.com.au</a> to your ⭐️Bookmarks for easy future reference.
+        </mj-text>
+
+        <mj-text>
+          Once activated, you’ll also receive an email notification every time a new deal is available for you to quote on. Simply log in to review the enquiry and submit your best offer.
+        </mj-text>
+
+        <mj-text padding="16px 0 0 0">
+          We’re excited to have you on board.
+        </mj-text>
+
+ <mj-include path="../partials/sign-off.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../partials/footer.mjml" />
+  </mj-body>
+</mjml>
