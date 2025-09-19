@@ -6,11 +6,12 @@
       <a href="{{unsubscribeUrl}}">Unsubscribe</a>
     </mj-text>
         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="center">
-          <mj-social-element name="facebook" href="https://www.facebook.com/CarExpert" background-color="#000000" border-radius="20px" />
-          <mj-social-element name="x" href="https://www.twitter.com/CarExpert" background-color="#000000" border-radius="20px" />
-          <mj-social-element name="instagram" href="https://www.instagram.com/CarExpert" background-color="#000000" border-radius="20px" />
-          <mj-social-element name="youtube" href="https://www.youtube.com/CarExpert" background-color="#000000" border-radius="20px" />
-          <mj-social-element src="http://localhost:4000/tiktok.png" href="https://www.linkedin.com/company/CarExpert" background-color="#000000" border-radius="20px" />
+          <mj-social-element src="http://localhost:4000/facebook.png" href="https://facebook.com/CarExpertAus" background-color="#000000" border-radius="20px" />
+          <mj-social-element src="http://localhost:4000/twitter-x.png" href="https://twitter.com/CarExpertAus" background-color="#000000" border-radius="20px" />
+          <mj-social-element src="http://localhost:4000/instagram.png" href="https://instagram.com/carexpert.com.au" background-color="#000000" border-radius="20px" />
+          <mj-social-element src="http://localhost:4000/youtube.png" href="https://www.youtube.com/CarExpertAus" background-color="#000000" border-radius="20px" />
+          <mj-social-element src="http://localhost:4000/linkedin.png" href="https://www.linkedin.com/company/carexpertaus/" background-color="#000000" border-radius="20px" />
+          <mj-social-element src="http://localhost:4000/tiktok.png" href="https://www.tiktok.com/@carexpertau" background-color="#000000" border-radius="20px" />
       </mj-social>
       <mj-text color="#7a7a7a" font-size="12px" align="center">&#169; 2025 CarExpert - ABN 71 636 729 836</mj-text>
       <mj-text color="#7a7a7a" font-size="12px" align="center">757 Ann Street, Fortitude Valley, QLD 4006</mj-text>
