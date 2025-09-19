@@ -1,7 +1,6 @@
+<!-- Meta + divider -->
 <mj-section background-color="#ffffff" padding="24px">
   <mj-column padding="0">
-
-    <!-- Meta list -->
     <mj-table color="#111827" font-size="15px" line-height="20px" padding="0 0 12px">
       {{#if deal.dealDeadline}}
       <tr>
@@ -9,14 +8,13 @@
         <td style="color:#b91c1c; padding-bottom:4px; vertical-align:top"><strong>{{deal.dealDeadline}}</strong></td>
       </tr>
       {{/if}}
-      
+
       {{#if deal.dealId}}
       <tr>
         <td style="padding-bottom:4px; vertical-align:top">Deal ID:</td>
         <td style="color:#111827; padding-bottom:4px; vertical-align:top">{{deal.dealId}}</td>
       </tr>
       {{/if}}
-
 
       {{#if deal.vehicle.dateRequired}}
       <tr>
@@ -38,79 +36,75 @@
       {{/if}}
     </mj-table>
 
-    <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="0 0 12px" />
+    <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="0" />
+  </mj-column>
+</mj-section>
 
-    <!-- New vehicle (plain text, no box) -->
-    {{#if deal.isNewCarDeal}}
-      <mj-text font-size="14px" line-height="1.4" padding="0 0 6px">
-        🚗 New vehicle
-      </mj-text>
-      <mj-text font-size="20px" line-height="24px" color="#111827" padding="0 0 8px">
+<!-- Two-column section: New vehicle (L) + Trade-in (R) -->
+<mj-section background-color="#ffffff" padding="0 24px 0 24px">
+  <!-- Left column: New vehicle -->
+  <mj-column width="50%" padding="0 12px 0 0" vertical-align="top">
+    <mj-raw>{{#if deal.isNewCarDeal}}</mj-raw>
+      <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🚗 New vehicle</mj-text>
+
+      <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
         <strong>{{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}}</strong>
       </mj-text>
+
       <mj-text font-size="16px" line-height="20px" padding="0 0 2px">
         {{#if deal.vehicle.colour}}
-          <span style="white-space:nowrap;">
-            Colour: <strong>{{deal.vehicle.colour}}</strong>
-          </span>
+          <span style="white-space:nowrap;">Colour: <strong>{{deal.vehicle.colour}}</strong></span>
         {{/if}}
-
         {{#if deal.vehicle.colour}}{{#if deal.vehicle.quantity}}
-          <span aria-hidden="true" style="padding:0 4px;">•</span>
+          <span aria-hidden="true" style="padding:04px;">•</span>
         {{/if}}{{/if}}
-
         {{#if deal.vehicle.quantity}}
-          <span style="white-space:nowrap;">
-            Quantity: <strong>{{deal.vehicle.quantity}}</strong>
-          </span>
+          <span style="white-space:nowrap;">Quantity: <strong>{{deal.vehicle.quantity}}</strong></span>
         {{/if}}
       </mj-text>
 
       {{#if deal.vehicle.note}}
         <mj-text font-size="16px" line-height="20px" padding="8px 0 8px">
-          "{{deal.vehicle.note}}"
+          "<em>{{deal.vehicle.note}}</em>"
         </mj-text>
       {{/if}}
-    {{/if}}
+    <mj-raw>{{/if}}</mj-raw>
+  </mj-column>
 
-    <!-- Spacer + divider if the New Vehicle section is present -->
-    {{#if deal.isNewCarDeal}}
-      <mj-spacer height="8px" />
-      <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="0 0 12px" />
-    {{/if}}
-
-    <!-- Trade-in (always render the heading) -->
-      <mj-text font-size="14px" line-height="1.4" padding="0 0 6px">
-      🔁 Trade-in
-    </mj-text>
+  <!-- Right column: Trade-in -->
+  <mj-column width="50%" padding="0 0 0 12px" vertical-align="top">
+    <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🔁 Trade-in</mj-text>
 
     <mj-raw>{{#if deal.tradeIn}}</mj-raw>
-    <!-- Headline with (monthYear) in brackets -->
-    <mj-text font-size="20px" line-height="24px" color="#111827" padding="0 0 4px">
+      <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
         <strong>
-        {{deal.tradeIn.make}} {{deal.tradeIn.model}}{{#if deal.tradeIn.variant}} {{deal.tradeIn.variant}}{{/if}}{{#if deal.tradeIn.monthYear}} ({{deal.tradeIn.monthYear}}){{/if}}
+          {{deal.tradeIn.make}} {{deal.tradeIn.model}}{{#if deal.tradeIn.variant}} {{deal.tradeIn.variant}}{{/if}}
         </strong>
-    </mj-text>
+      </mj-text>
 
-    <mj-raw>{{#if deal.tradeIn.note}}</mj-raw>
+            <mj-text font-size="16px" line-height="20px" padding="0 0 2px">
+        Build Month/Year: <strong>{{#if deal.tradeIn.monthYear}} ({{deal.tradeIn.monthYear}}){{/if}}</strong>
+      </mj-text>
+
+      <mj-raw>{{#if deal.tradeIn.note}}</mj-raw>
         <mj-text font-size="16px" line-height="20px" padding="8px 0 8px">
-        "{{deal.tradeIn.note}}"
+          "<em>{{deal.tradeIn.note}}</em>"
         </mj-text>
-    <mj-raw>{{/if}}</mj-raw>
+      <mj-raw>{{/if}}</mj-raw>
     <mj-raw>{{else}}</mj-raw>
-    <!-- No trade-in state -->
-    <mj-text font-size="14px" line-height="20px" color="#6b7280" padding="0 0 8px">
-        <em>No trade-in</em>
-    </mj-text>
+      <mj-text font-size="14px" line-height="20px" color="#6b7280" padding="0 0 8px"><em>No trade-in</em></mj-text>
     <mj-raw>{{/if}}</mj-raw>
+  </mj-column>
+</mj-section>
 
-    <!-- Go to deal Button -->
+<!-- Button + help link -->
+<mj-section background-color="#ffffff" padding="0 24px 24px 24px">
+  <mj-column>
     <mj-button href="{{deal.url}}" align="left" font-size="18px" padding="16px 0 0 0">
       👉 Review &amp; Quote
     </mj-button>
-    <mj-text padding="8px 0 0" font-size="12px" line-height="16px">
-      Can&apos;t click the button? <a href="{{deal.url}}">Open the deal</a>
+    <mj-text padding="8px 0 0" font-size="12px" line-height="16px" color="#6b7280">
+      Can&#39;t click the button? <a href="{{deal.url}}" style="color:#6b7280; text-decoration:underline;">Open the deal</a>
     </mj-text>
-
   </mj-column>
 </mj-section>
