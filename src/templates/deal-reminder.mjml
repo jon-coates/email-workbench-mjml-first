@@ -1,5 +1,6 @@
 <mjml>
   <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
     <mj-include path="../partials/head-attributes.mjml" />
     <mj-preview>⏱️ Quote by {{deal.dealDeadline}} • 📍 Delivery location {{deal.customerLocation}} • 🗓️ Delivery Date {{deal.vehicle.dateRequired}} • </mj-preview>
   </mj-head>
@@ -27,7 +28,6 @@
 
         <mj-include path="../partials/footer.mjml" />
 
-      </mj-column>
-    </mj-section>
+
   </mj-body>
 </mjml>

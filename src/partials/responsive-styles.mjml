@@ -1,0 +1,12 @@
+    <mj-style>
+      @media (max-width: 600px) {
+        .hide-on-mobile { display: none !important; mso-hide: all !important; }
+        .hide-on-desktop { display: block !important; }
+      }
+    </mj-style>
+    <mj-style>
+      @media (min-width: 601px) {
+        .hide-on-desktop { display: none !important; }
+        .hide-on-mobile { display: block !important; }
+      }
+    </mj-style>

@@ -1,6 +1,11 @@
-<mj-spacer height="24px" />
+<mj-section padding="0">
+  <mj-column padding="0">
+  <mj-spacer height="24px" />
+  </mj-column>
+</mj-section>
 <mj-section padding="16px 16px 0 16px" background-color="#ffffff" border-radius="24px 24px 0 0">
   <mj-column padding="0">
-    <mj-image padding="0" width="650px" src="http://localhost:4000/email-header.png" alt="{{brand.name}}" href="{{brand.url}}"></mj-image>
+    <mj-image css-class="hide-on-mobile" padding="0" width="650px" src="http://localhost:4000/email-header.png" alt="{{brand.name}}" href="{{brand.url}}"></mj-image>
+    <mj-image css-class="hide-on-desktop" padding="0" width="650px" src="http://localhost:4000/email-header-mobile.png" alt="{{brand.name}}" href="{{brand.url}}"></mj-image>
   </mj-column>
 </mj-section>

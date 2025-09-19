@@ -1,5 +1,5 @@
 <!-- Meta + divider -->
-<mj-section background-color="#ffffff" padding="24px">
+<mj-section background-color="#ffffff" padding="24px 24px 0 24px">
   <mj-column padding="0">
     <mj-table color="#111827" font-size="15px" line-height="20px" padding="0 0 12px">
       {{#if deal.dealDeadline}}
@@ -43,9 +43,9 @@
 <!-- Two-column section: New vehicle (L) + Trade-in (R) -->
 <mj-section background-color="#ffffff" padding="0 24px 0 24px">
   <!-- Left column: New vehicle -->
-  <mj-column width="50%" padding="0 12px 0 0" vertical-align="top">
+  <mj-column width="50%" padding="24px 12px 0 0" vertical-align="top">
     <mj-raw>{{#if deal.isNewCarDeal}}</mj-raw>
-      <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🚗 New vehicle</mj-text>
+      <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🚗 New vehicle:</mj-text>
 
       <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
         <strong>{{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}}</strong>
@@ -72,8 +72,8 @@
   </mj-column>
 
   <!-- Right column: Trade-in -->
-  <mj-column width="50%" padding="0 0 0 12px" vertical-align="top">
-    <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🔁 Trade-in</mj-text>
+  <mj-column width="50%" padding="24px 0 0 0" vertical-align="top">
+    <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🔁 Trade-in:</mj-text>
 
     <mj-raw>{{#if deal.tradeIn}}</mj-raw>
       <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
