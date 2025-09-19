@@ -1,14 +1,14 @@
-<mj-section background-color="#ffffff" padding="24px">
+<mj-section padding="24px">
   <mj-column>
-    <mj-text color="#7a7a7a" font-size="12px">
+    <mj-text color="#7a7a7a" font-size="12px" align="center">
       You’re receiving this because you subscribed to CarExpert updates.<br/>
-      {{brand.address}}<br/>
+      CarExpert, 757 Ann Street, Fortitude Valley, QLD 4006<br/>
       <a href="{{unsubscribeUrl}}">Unsubscribe</a>
     </mj-text>
-          <mj-social font-size="15px" icon-size="30px" mode="horizontal">
-        <mj-social-element name="facebook" href="https://www.facebook.com/CarExpert" />
-        <mj-social-element name="instagram" href="https://www.instagram.com/CarExpert" />
-        <mj-social-element name="x" href="https://www.twitter.com/CarExpert" />
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="center">
+          <mj-social-element name="facebook" href="https://www.facebook.com/CarExpert" background-color="#000000" border-radius="20px" />
+          <mj-social-element name="instagram" href="https://www.instagram.com/CarExpert" background-color="#000000" border-radius="20px" />
+          <mj-social-element name="x" href="https://www.twitter.com/CarExpert" background-color="#000000" border-radius="20px" />
       </mj-social>
   </mj-column>
 </mj-section>

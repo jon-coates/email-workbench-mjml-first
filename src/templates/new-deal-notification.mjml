@@ -1,64 +1,28 @@
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-all font-family="Arial, sans-serif" />
+      <mj-all font-family="Anek Latin, Arial, sans-serif" />
       <mj-text color="#212B36" font-size="15px" line-height="22px" />
       <mj-button background-color="#000000" color="#ffffff" font-weight="700" font-size="16px" border-radius="8px" />
       <mj-section padding="0" />
       <mj-column padding="0" />
+        <mj-text padding="0" line-height="1.45" color="#212B36" />
+     <mj-button background-color="#000000" color="#ffffff" font-weight="700" font-size="16px" border-radius="8px" />
     </mj-attributes>
+    <mj-preview>⏱️ Quote by {{deal.dealDeadline}} • 📍 Delivery location {{deal.customerLocation}} • 🗓️ Delivery Date {{deal.vehicle.dateRequired}} • </mj-preview>
   </mj-head>
 
-  <mj-body background-color="#ffffff">
+  <mj-body background-color="#fafafa">
   <mj-include path="../partials/header.mjml" />
-    <mj-section padding="24px">
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
-
         <mj-text padding="0 0 16px 0">Hi {{dealer.firstName}},</mj-text>
+        <mj-text>A new customer enquiry is ready for you to review and quote on.</mj-text>
+       </mj-column>
+      </mj-section>
 
-        <mj-text padding="0 0 16px 0">
-          A new customer enquiry is ready for you to review and quote on.
-        </mj-text>
-
-        <!-- Customer details (above deadline) -->
-        <mj-text color="#637381" padding="0 0 16px 0" font-size="15px" line-height="20px">
-          <ul style="margin:0; padding-left:20px;">
-            {{#if deal.vehicle.dateRequired}}
-              <li>Required delivery date: <span style="color:#212B36;">{{deal.vehicle.dateRequired}}</span></li>
-            {{/if}}
-            <li>Location: <span style="color:#212B36;">{{deal.customerLocation}}</span></li>
-            {{#if deal.dealId}}
-              <li>Deal ID: <span style="color:#212B36;">{{deal.dealId}}</span></li>
-            {{/if}}
-          </ul>
-        </mj-text>
-
-        <!-- Deadline (standout card) -->
-        <mj-include path="../partials/deadline.mjml" />
-
-        <!-- New vehicle card (conditional) -->
-        {{#if deal.isNewCarDeal}}
-          <mj-include path="../partials/new-vehicle-card.mjml" />
-        {{/if}}
-
-        <!-- Trade-in card (conditional) -->
-        {{#if deal.hasTradeIn}}
-          <mj-include path="../partials/tradein-card.mjml" />
-        {{/if}}
-
-        <!-- Fallback when no vehicle + no trade -->
-        {{#unless deal.isNewCarDeal}}
-          {{#unless deal.hasTradeIn}}
-            <mj-text color="#637381" padding="16px 0 0 0" font-style="italic">
-              This enquiry does not include a new vehicle or a trade-in.
-            </mj-text>
-          {{/unless}}
-        {{/unless}}
-
-        <!-- Full-width CTA -->
-        <mj-button href="{{deal.url}}" align="center" width="100%" padding="24px 0 0 0">
-          View in Exchange
-        </mj-button>
+        <!-- Deal details (above deadline) -->
+        <mj-include path="../partials/deal-details.mjml" />
 
         <mj-include path="../partials/footer.mjml" />
 

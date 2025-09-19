@@ -8,7 +8,7 @@
     "deal": {
       "dealId": "12345",
       "isNewCarDeal": true,
-      "hasTradeIn": true,
+      "hasTradeIn": false,
       "customerLocation": "Sydney, NSW",
       "dealDeadline": "Tue 23 Sep 2025, 4:23 PM",
       "url": "https://exchange.carexpert.com.au/deals/12345",
@@ -19,7 +19,7 @@
         "colour": "White",
         "quantity": 2,
         "note": "Silver alt colour. Cash buyer.",
-        "dateRequired": "Thu 23 Sep, 2025 at 4:27 PM"
+        "dateRequired": "23 Sep 2025"
       },
       "tradeIn": {
         "make": "Mazda",
