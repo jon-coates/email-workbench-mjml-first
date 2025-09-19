@@ -1,0 +1,7 @@
+    <mj-attributes>
+      <mj-all font-family="Anek Latin, Arial, sans-serif" />
+      <mj-button background-color="#000000" color="#ffffff" font-weight="700" font-size="14px" border-radius="8px" padding="0" inner-padding="12px 20px" />
+      <mj-column padding="0" />
+      <mj-section padding="0" />
+      <mj-text color="#212B36" font-size="15px" line-height="22px" padding="0" />
+    </mj-attributes>

@@ -1,9 +1,8 @@
-<!-- Deal card (coloured box on white background) -->
-<mj-section background-color="#ffffff" border-radius="12px" padding="24px">
+<mj-section background-color="#ffffff" padding="24px">
   <mj-column padding="0">
 
     <!-- Meta list -->
-    <mj-table color="#637381" font-size="15px" line-height="20px" padding="0 0 12px">
+    <mj-table color="#111827" font-size="15px" line-height="20px" padding="0 0 12px">
       {{#if deal.dealDeadline}}
       <tr>
         <td style="padding-bottom:4px; vertical-align:top">Quote Deadline:</td>
@@ -43,33 +42,33 @@
 
     <!-- New vehicle (plain text, no box) -->
     {{#if deal.isNewCarDeal}}
-      <mj-text font-size="12px" text-transform="uppercase" letter-spacing="0.05em" line-height="1.4" color="#65656C" padding="0 0 6px">
-        <strong>🚗 New vehicle</strong>
+      <mj-text font-size="14px" line-height="1.4" padding="0 0 6px">
+        🚗 New vehicle
       </mj-text>
       <mj-text font-size="20px" line-height="24px" color="#111827" padding="0 0 8px">
         <strong>{{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}}</strong>
       </mj-text>
-      <mj-text font-size="16px" line-height="20px" color="#6b7280" padding="0 0 2px">
+      <mj-text font-size="16px" line-height="20px" padding="0 0 2px">
         {{#if deal.vehicle.colour}}
           <span style="white-space:nowrap;">
-            Colour: <span style="color:#111827;">{{deal.vehicle.colour}}</span>
+            Colour: <strong>{{deal.vehicle.colour}}</strong>
           </span>
         {{/if}}
 
         {{#if deal.vehicle.colour}}{{#if deal.vehicle.quantity}}
-          <span aria-hidden="true" style="padding:0 8px;">•</span>
+          <span aria-hidden="true" style="padding:0 4px;">•</span>
         {{/if}}{{/if}}
 
         {{#if deal.vehicle.quantity}}
           <span style="white-space:nowrap;">
-            Quantity: <span style="color:#111827;">{{deal.vehicle.quantity}}</span>
+            Quantity: <strong>{{deal.vehicle.quantity}}</strong>
           </span>
         {{/if}}
       </mj-text>
 
       {{#if deal.vehicle.note}}
-        <mj-text font-size="16px" line-height="20px" color="#6b7280" padding="8px 0 8px">
-          <span style="color:#111827;">{{deal.vehicle.note}}</span>
+        <mj-text font-size="16px" line-height="20px" padding="8px 0 8px">
+          "{{deal.vehicle.note}}"
         </mj-text>
       {{/if}}
     {{/if}}
@@ -81,8 +80,8 @@
     {{/if}}
 
     <!-- Trade-in (always render the heading) -->
-    <mj-text font-size="12px" text-transform="uppercase" letter-spacing="0.05em" line-height="1.4" color="#65656C" padding="0 0 6px">
-      <strong>🔁 Trade-in</strong>
+      <mj-text font-size="14px" line-height="1.4" padding="0 0 6px">
+      🔁 Trade-in
     </mj-text>
 
     <mj-raw>{{#if deal.tradeIn}}</mj-raw>
@@ -94,8 +93,8 @@
     </mj-text>
 
     <mj-raw>{{#if deal.tradeIn.note}}</mj-raw>
-        <mj-text font-size="16px" line-height="20px" color="#6b7280" padding="8px 0 8px">
-        <span style="color:#111827;">{{deal.tradeIn.note}}</span>
+        <mj-text font-size="16px" line-height="20px" padding="8px 0 8px">
+        "{{deal.tradeIn.note}}"
         </mj-text>
     <mj-raw>{{/if}}</mj-raw>
     <mj-raw>{{else}}</mj-raw>
@@ -105,12 +104,12 @@
     </mj-text>
     <mj-raw>{{/if}}</mj-raw>
 
-    <!-- Button BELOW vehicle details -->
-    <mj-button href="{{deal.url}}" align="left" padding="20px 0 0" font-size="18px">
-      Review &amp; Quote
+    <!-- Go to deal Button -->
+    <mj-button href="{{deal.url}}" align="left" font-size="18px" padding="16px 0 0 0">
+      👉 Review &amp; Quote
     </mj-button>
-    <mj-text padding="8px 0 0" font-size="12px" line-height="16px" color="#6b7280">
-      Can&apos;t click the button? <a href="{{deal.url}}" style="color:#6b7280; text-decoration:underline;">Open the deal</a>
+    <mj-text padding="8px 0 0" font-size="12px" line-height="16px">
+      Can&apos;t click the button? <a href="{{deal.url}}">Open the deal</a>
     </mj-text>
 
   </mj-column>

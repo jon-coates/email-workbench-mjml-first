@@ -10,7 +10,7 @@
     <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
         <mj-text padding="0 0 16px 0">Hi {{dealer.firstName}},</mj-text>
-        <mj-text>A new customer enquiry is ready for you to review and quote on.</mj-text>
+        <mj-text>This is a friendly reminder that you have a quote request that is pending your response.</mj-text>
        </mj-column>
       </mj-section>
 
@@ -19,8 +19,9 @@
 
         <mj-section background-color="#ffffff" padding="0 24px 0 24px">
           <mj-column>
-            <mj-text>Responding quickly increases your chances of securing this deal.</mj-text>
+            <mj-text>Don't miss out on the chance to secure this deal.</mj-text>
             <mj-include path="../partials/sign-off.mjml" />
+
           </mj-column>
         </mj-section>
 

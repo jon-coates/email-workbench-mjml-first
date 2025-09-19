@@ -1,14 +1,18 @@
+<mj-section height="24px" background-color="#ffffff" border-radius="0 0 24px 24px"><mj-column><mj-spacer height="24px" /></mj-column></mj-section>
 <mj-section padding="24px">
   <mj-column>
     <mj-text color="#7a7a7a" font-size="12px" align="center">
-      You’re receiving this because you subscribed to CarExpert updates.<br/>
-      CarExpert, 757 Ann Street, Fortitude Valley, QLD 4006<br/>
+      You&apos;re receiving this because you are regestered as a dealer with CarExpert Exchange.<br/>
       <a href="{{unsubscribeUrl}}">Unsubscribe</a>
     </mj-text>
         <mj-social font-size="15px" icon-size="30px" mode="horizontal" align="center">
           <mj-social-element name="facebook" href="https://www.facebook.com/CarExpert" background-color="#000000" border-radius="20px" />
-          <mj-social-element name="instagram" href="https://www.instagram.com/CarExpert" background-color="#000000" border-radius="20px" />
           <mj-social-element name="x" href="https://www.twitter.com/CarExpert" background-color="#000000" border-radius="20px" />
+          <mj-social-element name="instagram" href="https://www.instagram.com/CarExpert" background-color="#000000" border-radius="20px" />
+          <mj-social-element name="youtube" href="https://www.youtube.com/CarExpert" background-color="#000000" border-radius="20px" />
+          <mj-social-element src="http://localhost:4000/tiktok.png" href="https://www.linkedin.com/company/CarExpert" background-color="#000000" border-radius="20px" />
       </mj-social>
+      <mj-text color="#7a7a7a" font-size="12px" align="center">&#169; 2025 CarExpert - ABN 71 636 729 836</mj-text>
+      <mj-text color="#7a7a7a" font-size="12px" align="center">757 Ann Street, Fortitude Valley, QLD 4006</mj-text>
   </mj-column>
 </mj-section>

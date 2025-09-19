@@ -1,0 +1,33 @@
+{
+    "dealer": {
+      "firstName": "David",
+      "lastName": "Dealerson",
+      "email": "david@example.com",
+      "note": "Will need transport to Winton"
+    },
+    "deal": {
+      "dealId": "12345",
+      "isNewCarDeal": true,
+      "hasTradeIn": false,
+      "customerLocation": "Sydney, NSW",
+      "dealDeadline": "Tue 23 Sep 2025, 4:23 PM",
+      "url": "https://exchange.carexpert.com.au/deals/12345",
+      "vehicle": {
+        "make": "Toyota",
+        "model": "Corolla",
+        "variant": "Ascent Sport",
+        "colour": "White",
+        "quantity": 2,
+        "note": "Silver alt colour. Cash buyer.",
+        "dateRequired": "23 Sep 2025"
+      },
+      "tradeIn": {
+        "make": "Mazda",
+        "model": "CX-5",
+        "variant": "Maxx Sport",
+        "monthYear": "Aug 2018",
+        "note": "One owner, always garaged."
+      }
+    }
+  }
+  
