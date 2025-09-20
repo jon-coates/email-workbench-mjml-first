@@ -1,0 +1,111 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+    <mj-preview>Deals you didn’t win — summary for {{dateRange}}</mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+    <mj-include path="../partials/header.mjml" />
+
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text font-size="22px" line-height="26px" color="#111827" padding="0 0 8px 0">
+          <strong>Deals you didn’t win: Summary for {{dateRange}}</strong>
+        </mj-text>
+
+        <mj-text padding="0 0 16px 0">
+          Hi {{dealer.name}},
+        </mj-text>
+
+        <mj-text>
+          Here’s a summary of deals you participated in but did not win during <strong>{{dateRange}}</strong>.
+        </mj-text>
+
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+
+        <!-- Repeat: one block per lost deal -->
+        <mj-raw>{{#each lostDeals}}</mj-raw>
+        <mj-table padding="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td width="30%" style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Deal ID
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              <strong>{{this.dealID}}</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="30%" style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Vehicle
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              <strong>{{this.vehicle.make}} {{this.vehicle.model}}{{#if this.vehicle.variant}} {{this.vehicle.variant}}{{/if}}</strong>
+              {{#if this.vehicle.colour}} <span style="color:#111827;">({{this.vehicle.colour}})</span>{{/if}}
+            </td>
+          </tr>
+
+          <tr>
+            <td width="30%" style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Quantity
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              {{this.quantity}}
+            </td>
+          </tr>
+
+          <tr>
+            <td width="30%" style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Location
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              {{this.customerLocation}}
+            </td>
+          </tr>
+
+          <tr>
+            <td width="30%" style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Expired
+            </td>
+            <td style="padding:0 0 0 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              {{this.dealDeadline}}
+            </td>
+          </tr>
+
+          <tr>
+            <td width="30%" style="padding:0 12px 0 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Lost Reason
+            </td>
+            <td style="padding:0 0 0 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              {{this.lostReason}}
+            </td>
+          </tr>
+
+
+        </mj-table>
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+        <mj-raw>{{/each}}</mj-raw>
+
+        <mj-text>
+          While these deals weren’t successful, reviewing your pricing and response times may help improve your chances in future opportunities.
+        </mj-text>
+
+        <mj-button href="{{portalUrl}}" align="left" font-size="18px" padding="16px 0 0 0">
+          👉 Log in to CarExpert Exchange
+        </mj-button>
+        <mj-text padding="8px 0 0" font-size="12px" line-height="16px" color="#6b7280">
+          Can&#39;t click the button?
+          <a href="{{portalUrl}}" style="color:#6b7280; text-decoration:underline;">Open the portal</a>
+        </mj-text>
+
+        <mj-text padding="16px 0 0 0">
+          Thanks for your continued participation,<br/>
+          The CarExpert Exchange Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../partials/footer.mjml" />
+  </mj-body>
+</mjml>

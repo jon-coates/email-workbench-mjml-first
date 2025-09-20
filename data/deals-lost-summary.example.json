@@ -1,0 +1,44 @@
+{
+    "dealer": {
+      "name": "Alex"
+    },
+    "dateRange": "1–15 Sep 2025",
+    "portalUrl": "https://exchange.carexpert.com.au/deals",
+    "subscribedReason": "You are receiving this email because you have been invited to CarExpert Exchange.",
+    "lostDeals": [
+      {
+        "dealID": "CE-10411",
+        "vehicle": {
+          "make": "Hyundai",
+          "model": "i30",
+          "variant": "Active",
+          "colour": "Polar White"
+        },
+        "quantity": 1,
+        "customerLocation": "Sydney NSW",
+        "dealDeadline": "02 Sep 2025, 5:00 pm AEST",
+        "lostReason": "Competitor delivery time"
+      },
+      {
+        "dealID": "CE-10418",
+        "vehicle": {
+          "make": "Mazda",
+          "model": "CX-5",
+          "variant": "Maxx Sport",
+          "colour": "Machine Grey"
+        },
+        "quantity": 2,
+        "customerLocation": "Melbourne VIC",
+        "dealDeadline": "07 Sep 2025, 12:00 pm AEST",
+        "lostReason": "Competitor outbid"
+      }
+    ],
+    "brand": {
+      "name": "CarExpert",
+      "url": "https://www.carexpert.com.au",
+      "logoUrl": "http://localhost:4000/logos/carexpert.png",
+      "address": "Level 6, 200 Adelaide Street, Brisbane QLD 4000"
+    },
+    "unsubscribeUrl": "https://example.com/unsubscribe"
+  }
+  
