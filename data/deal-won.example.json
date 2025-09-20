@@ -1,0 +1,35 @@
+{
+    "dealer": {
+      "name": "Alex"
+    },
+    "deal": {
+      "dealID": "CE-10423",
+      "url": "https://exchange.carexpert.com.au/deals/CE-10423",
+      "quantity": 2,
+      "vehicle": {
+        "make": "Toyota",
+        "model": "RAV4",
+        "variant": "GX Hybrid (2WD)",
+        "colour": "Glacier White"
+      },
+      "customerLocation": "Brisbane QLD",
+      "dateRequired": "20 Oct 2025"
+    },
+    "tradeIn": {
+      "hasTradeIn": true,
+      "year": "2018",
+      "make": "Mazda",
+      "model": "CX-5",
+      "variant": "Maxx Sport",
+      "isWon": false
+    },
+    "brand": {
+      "name": "CarExpert",
+      "url": "https://www.carexpert.com.au",
+      "logoUrl": "http://localhost:4000/logos/carexpert.png",
+      "address": "Level 6, 200 Adelaide Street, Brisbane QLD 4000"
+    },
+    "unsubscribeUrl": "https://example.com/unsubscribe",
+    "subscribedReason": "You are receiving this email because you have been invited to CarExpert Exchange."
+  }
+  

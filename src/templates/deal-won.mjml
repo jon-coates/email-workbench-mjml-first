@@ -1,0 +1,111 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+        <mj-preview>🎉 Deal won — we’ll be in touch to finalise next steps</mj-preview>
+  </mj-head>
+
+
+  <mj-body background-color="#F9FAFB">
+    <mj-include path="../partials/header.mjml" />
+
+    <mj-section padding="24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text font-size="22px" line-height="26px" color="#111827" padding="0 0 8px 0">
+          <strong>🎉 You’ve won a deal:</strong>
+          {{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}}
+          (Deal #{{deal.dealID}})
+        </mj-text>
+
+        <mj-text padding="0 0 16px 0">
+          Hi {{dealer.name}},
+        </mj-text>
+
+        <mj-text>
+          Congratulations! You’ve secured a deal through <strong>CarExpert Exchange</strong>.
+          Our team will be in touch shortly to finalise the next steps, including contracts and delivery arrangements.
+        </mj-text>
+
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+
+        <!-- Deal outcome (labels left, details right) -->
+        <mj-table padding="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Deal ID
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              <strong>{{deal.dealID}}</strong>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:0 0 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              New vehicle(s)
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              <strong>{{deal.quantity}} × {{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}}</strong>
+              {{#if deal.vehicle.colour}} <span style="color:#111827;">({{deal.vehicle.colour}})</span>{{/if}}
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Customer location
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              {{deal.customerLocation}}
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Required by
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              {{deal.dateRequired}}
+            </td>
+          </tr>
+
+          <!-- Trade-in (conditional) -->
+          <mj-raw>{{#if tradeIn.hasTradeIn}}</mj-raw>
+          <tr>
+            <td style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Trade-in
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              Vehicle: {{tradeIn.year}} {{tradeIn.make}} {{tradeIn.model}}{{#if tradeIn.variant}} {{tradeIn.variant}}{{/if}}<br/>
+              <mj-raw>{{#if tradeIn.isWon}}</mj-raw>
+                Outcome: ✅ Secured
+              <mj-raw>{{else}}</mj-raw>
+                Outcome: ❌ Not secured
+              <mj-raw>{{/if}}</mj-raw>
+            </td>
+          </tr>
+          <mj-raw>{{/if}}</mj-raw>
+        </mj-table>
+
+        <mj-button href="{{deal.url}}" align="left" font-size="18px" padding="16px 0 0 0">
+          👉 View the full deal details
+        </mj-button>
+        <mj-text padding="8px 0 0" font-size="12px" line-height="16px" color="#6b7280">
+          Can&#39;t click the button?
+          <a href="{{deal.url}}" style="color:#6b7280; text-decoration:underline;">Open the deal</a>
+        </mj-text>
+
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+
+        <mj-text>
+          Thank you for responding quickly and competitively.
+        </mj-text>
+
+        <mj-text padding="16px 0 0 0">
+          Best regards,<br/>
+          The CarExpert Exchange Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../partials/footer.mjml" />
+  </mj-body>
+</mjml>
