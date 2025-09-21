@@ -27,7 +27,5 @@
 
         <mj-include path="../partials/footer.mjml" />
 
-      </mj-column>
-    </mj-section>
   </mj-body>
 </mjml>
