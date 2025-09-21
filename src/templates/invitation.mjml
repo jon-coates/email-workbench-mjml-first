@@ -9,15 +9,14 @@
     </mj-attributes>
     <mj-include path="../partials/responsive-styles.mjml" />
 
-    <mj-preview>Activate your CarExpert Exchange account</mj-preview>
-  </mj-head>
+</mj-head>
 
   <mj-body background-color="#F9FAFB">
     <mj-include path="../partials/header.mjml" />
 
-    <mj-section padding="24px" background-color="#ffffff">
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
-        <mj-text padding="0 0 16px 0">Hi {{dealer.firstName}} 👋,</mj-text>
+        <mj-text padding="0 0 8px 0">Hi {{dealer.firstName}} 👋,</mj-text>
 
         <mj-text>
           You have been invited to <strong>CarExpert Exchange</strong>, the platform where you’ll receive and manage quotes for CarExpert buyers.
@@ -43,7 +42,7 @@
         </mj-text>
 
         <mj-text>
-          Once activated, you’ll also receive an email notification every time a new deal is available for you to quote on. Simply log in to review the enquiry and submit your best offer.
+          Once activated, you’ll receive an email notification every time a new deal is available for you to quote on. Simply log in to review the enquiry and submit your best offer.
         </mj-text>
 
         <mj-text padding="16px 0 0 0">

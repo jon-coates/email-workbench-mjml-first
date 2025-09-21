@@ -2,7 +2,6 @@
   <mj-head>
     <mj-include path="../partials/responsive-styles.mjml" />
     <mj-include path="../partials/head-attributes.mjml" />
-    <mj-preview>Deals you didn’t win — summary for {{dateRange}}</mj-preview>
   </mj-head>
 
   <mj-body background-color="#F9FAFB">
@@ -11,10 +10,10 @@
     <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
         <mj-text font-size="22px" line-height="26px" color="#111827" padding="0 0 8px 0">
-          <strong>Deals you didn’t win: Summary for {{dateRange}}</strong>
+          <strong>Lost Opportunities: {{dateRange}}</strong>
         </mj-text>
 
-        <mj-text padding="0 0 16px 0">
+        <mj-text padding="0 0 8px 0">
           Hi {{dealer.name}},
         </mj-text>
 
@@ -64,14 +63,14 @@
             </td>
           </tr>
 
-          <tr>
+          <!-- <tr>
             <td width="30%" style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
               Expired
             </td>
             <td style="padding:0 0 0 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
               {{this.dealDeadline}}
             </td>
-          </tr>
+          </tr> -->
 
           <tr>
             <td width="30%" style="padding:0 12px 0 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">

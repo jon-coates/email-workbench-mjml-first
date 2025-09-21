@@ -9,7 +9,7 @@
   <mj-body background-color="#F9FAFB">
     <mj-include path="../partials/header.mjml" />
 
-    <mj-section padding="24px" background-color="#ffffff">
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
         <mj-text font-size="22px" line-height="26px" color="#111827" padding="0 0 8px 0">
           <strong>🎉 You’ve won a deal:</strong>
@@ -17,7 +17,7 @@
           (Deal #{{deal.dealID}})
         </mj-text>
 
-        <mj-text padding="0 0 16px 0">
+        <mj-text padding="0 0 8px 0">
           Hi {{dealer.name}},
         </mj-text>
 

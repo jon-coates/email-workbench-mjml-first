@@ -8,7 +8,11 @@
     "watch": "node scripts/watch.js",
     "static": "node scripts/static.js",
     "presend": "npm run build",
-    "send": "node scripts/send.js --file dist/deals-lost-summary.example.html --to you@example.com",
+    "send": "node scripts/send.js --file dist/password-updated.example.html --to you@example.com",
+
+    "presend:all": "npm run build",
+    "send:all": "node scripts/send-all.js --to you@example.com",
+
     "clean": "rimraf dist && mkdir -p dist"
   },
   "dependencies": {

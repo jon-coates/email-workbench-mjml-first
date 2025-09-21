@@ -2,7 +2,7 @@
     "dealer": {
       "name": "Alex"
     },
-    "dateRange": "1–15 Sep 2025",
+    "dateRange": "15 Sep 2025",
     "portalUrl": "https://exchange.carexpert.com.au/deals",
     "subscribedReason": "You are receiving this email because you have been invited to CarExpert Exchange.",
     "lostDeals": [
@@ -17,7 +17,7 @@
         "quantity": 1,
         "customerLocation": "Sydney NSW",
         "dealDeadline": "02 Sep 2025, 5:00 pm AEST",
-        "lostReason": "Competitor delivery time"
+        "lostReason": "Delivery date"
       },
       {
         "dealID": "CE-10418",
@@ -30,7 +30,20 @@
         "quantity": 2,
         "customerLocation": "Melbourne VIC",
         "dealDeadline": "07 Sep 2025, 12:00 pm AEST",
-        "lostReason": "Competitor outbid"
+        "lostReason": "Price"
+      },
+      {
+        "dealID": "CE-10419",
+        "vehicle": {
+          "make": "Toyota",
+          "model": "Corolla",
+          "variant": "Ascent Sport",
+          "colour": "White"
+        },
+        "quantity": 1,
+        "customerLocation": "Brisbane QLD",
+        "dealDeadline": "08 Sep 2025, 12:00 pm AEST",
+        "lostReason": "Missed deadline"
       }
     ],
     "brand": {

@@ -44,8 +44,8 @@
 <mj-section background-color="#ffffff" padding="0 24px 0 24px">
   <!-- Left column: New vehicle -->
   <mj-column width="50%" padding="24px 12px 0 0" vertical-align="top">
-    <mj-raw>{{#if deal.isNewCarDeal}}</mj-raw>
       <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🚗 New vehicle:</mj-text>
+    <mj-raw>{{#if deal.vehicle.make}}</mj-raw>
 
       <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
         <strong>{{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}}</strong>
@@ -68,6 +68,9 @@
           "<em>{{deal.vehicle.note}}</em>"
         </mj-text>
       {{/if}}
+          <mj-raw>{{else}}</mj-raw>
+      <mj-text font-size="14px" line-height="20px" color="#6b7280" padding="0 0 8px"><em>No new vehicle</em></mj-text>
+
     <mj-raw>{{/if}}</mj-raw>
   </mj-column>
 
@@ -75,7 +78,7 @@
   <mj-column width="50%" padding="24px 0 0 0" vertical-align="top">
     <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🔁 Trade-in:</mj-text>
 
-    <mj-raw>{{#if deal.tradeIn}}</mj-raw>
+    <mj-raw>{{#if deal.tradeIn.make}}</mj-raw>
       <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
         <strong>
           {{deal.tradeIn.make}} {{deal.tradeIn.model}}{{#if deal.tradeIn.variant}} {{deal.tradeIn.variant}}{{/if}}
@@ -83,7 +86,7 @@
       </mj-text>
 
             <mj-text font-size="16px" line-height="20px" padding="0 0 2px">
-        Build Month/Year: <strong>{{#if deal.tradeIn.monthYear}} ({{deal.tradeIn.monthYear}}){{/if}}</strong>
+        {{#if deal.tradeIn.monthYear}}Build Month/Year: <strong> ({{deal.tradeIn.monthYear}})</strong>{{/if}}
       </mj-text>
 
       <mj-raw>{{#if deal.tradeIn.note}}</mj-raw>
