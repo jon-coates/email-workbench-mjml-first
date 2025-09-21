@@ -1,0 +1,1 @@
+Update: you were unsuccessful in {{lostDeals.length}} deal{{#unless (eq lostDeals.length 1)}}s{{/unless}}

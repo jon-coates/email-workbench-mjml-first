@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Email Preview • CarExpert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Templates</h1>
+      <div class="theme-toggle">
+        <button id="theme-toggle" class="theme-btn">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-text">Dark</span>
+        </button>
+      </div>
+      <div id="list"></div>
+    </aside>
+
+    <main class="main">
+      <header class="toolbar">
+        <div class="subject" id="subject">(subject will appear here)</div>
+        <div class="devices">
+          <button data-w="360">Mobile</button>
+          <button data-w="600">Tablet</button>
+          <button data-w="100%">Desktop</button>
+        </div>
+      </header>
+
+      <div class="stage">
+        <iframe id="frame" title="Email preview" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+      </div>
+    </main>
+  </div>
+
+  <script src="/preview.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+{
+  "items": [
+    {
+      "file": "deal-reminder.example.html",
+      "url": "/previews/deal-reminder.example.html",
+      "template": "deal-reminder",
+      "variant": "example",
+      "subject": "Last chance: Toyota Corolla Ascent Sport",
+      "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Sydney, NSW • 🗓️ Delivery Date 23 Sep 2025 •"
+    },
+    {
+      "file": "deal-won.example.html",
+      "url": "/previews/deal-won.example.html",
+      "template": "deal-won",
+      "variant": "example",
+      "subject": "🎉 You’ve won a deal: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
+      "preheader": "🎉 Deal won — we’ll be in touch to finalise next steps"
+    },
+    {
+      "file": "deals-lost-summary.example.html",
+      "url": "/previews/deals-lost-summary.example.html",
+      "template": "deals-lost-summary",
+      "variant": "example",
+      "subject": "Update: you were unsuccessful in 3 deals",
+      "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Quantity 1 Location Sydney NSW Lost Reason Delivery date CE-10418 Vehicle Mazda CX-5 Maxx…"
+    },
+    {
+      "file": "invitation.example.html",
+      "url": "/previews/invitation.example.html",
+      "template": "invitation",
+      "variant": "example",
+      "subject": "Activate your CarExpert Exchange account",
+      "preheader": ""
+    },
+    {
+      "file": "new-deal.example.html",
+      "url": "/previews/new-deal.example.html",
+      "template": "new-deal",
+      "variant": "example",
+      "subject": "New Quote Request: Suzuki Swift Ascent Sport (Deal #12345)",
+      "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Sydney, NSW • 🗓️ Delivery Date 23 Sep 2025 •"
+    },
+    {
+      "file": "password-reset.example.html",
+      "url": "/previews/password-reset.example.html",
+      "template": "password-reset",
+      "variant": "example",
+      "subject": "Reset your CarExpert Exchange password",
+      "preheader": ""
+    },
+    {
+      "file": "password-updated.example.html",
+      "url": "/previews/password-updated.example.html",
+      "template": "password-updated",
+      "variant": "example",
+      "subject": "Your CarExpert Exchange password was successfully reset",
+      "preheader": ""
+    }
+  ],
+  "grouped": {
+    "deal-reminder": [
+      {
+        "file": "deal-reminder.example.html",
+        "url": "/previews/deal-reminder.example.html",
+        "template": "deal-reminder",
+        "variant": "example",
+        "subject": "Last chance: Toyota Corolla Ascent Sport",
+        "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Sydney, NSW • 🗓️ Delivery Date 23 Sep 2025 •"
+      }
+    ],
+    "deal-won": [
+      {
+        "file": "deal-won.example.html",
+        "url": "/previews/deal-won.example.html",
+        "template": "deal-won",
+        "variant": "example",
+        "subject": "🎉 You’ve won a deal: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
+        "preheader": "🎉 Deal won — we’ll be in touch to finalise next steps"
+      }
+    ],
+    "deals-lost-summary": [
+      {
+        "file": "deals-lost-summary.example.html",
+        "url": "/previews/deals-lost-summary.example.html",
+        "template": "deals-lost-summary",
+        "variant": "example",
+        "subject": "Update: you were unsuccessful in 3 deals",
+        "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Quantity 1 Location Sydney NSW Lost Reason Delivery date CE-10418 Vehicle Mazda CX-5 Maxx…"
+      }
+    ],
+    "invitation": [
+      {
+        "file": "invitation.example.html",
+        "url": "/previews/invitation.example.html",
+        "template": "invitation",
+        "variant": "example",
+        "subject": "Activate your CarExpert Exchange account",
+        "preheader": ""
+      }
+    ],
+    "new-deal": [
+      {
+        "file": "new-deal.example.html",
+        "url": "/previews/new-deal.example.html",
+        "template": "new-deal",
+        "variant": "example",
+        "subject": "New Quote Request: Suzuki Swift Ascent Sport (Deal #12345)",
+        "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Sydney, NSW • 🗓️ Delivery Date 23 Sep 2025 •"
+      }
+    ],
+    "password-reset": [
+      {
+        "file": "password-reset.example.html",
+        "url": "/previews/password-reset.example.html",
+        "template": "password-reset",
+        "variant": "example",
+        "subject": "Reset your CarExpert Exchange password",
+        "preheader": ""
+      }
+    ],
+    "password-updated": [
+      {
+        "file": "password-updated.example.html",
+        "url": "/previews/password-updated.example.html",
+        "template": "password-updated",
+        "variant": "example",
+        "subject": "Your CarExpert Exchange password was successfully reset",
+        "preheader": ""
+      }
+    ]
+  }
+}

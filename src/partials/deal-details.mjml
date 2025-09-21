@@ -101,7 +101,7 @@
 </mj-section>
 
 <!-- Button + help link -->
-<mj-section padding="0 24px 24px 24px">
+<mj-section padding="0 24px 24px 24px" background-color="#ffffff">
   <mj-column>
     <mj-button href="{{deal.url}}" font-size="18px" align="left" padding="16px 0 0 0">
       👉 Review &amp; Quote
