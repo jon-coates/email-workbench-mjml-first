@@ -4,7 +4,7 @@
     <mj-table color="#111827" font-size="15px" line-height="20px" padding="0 0 12px">
       {{#if deal.dealDeadline}}
       <tr>
-        <td style="padding-bottom:4px; vertical-align:top">Quote Deadline:</td>
+        <td style="padding-bottom:4px; vertical-align:top; width: 120px;">Quote Deadline:</td>
         <td style="color:#b91c1c; padding-bottom:4px; vertical-align:top"><strong>{{deal.dealDeadline}}</strong></td>
       </tr>
       {{/if}}

@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "file": "ce-requested-dealer-password.example.html",
+      "url": "/previews/ce-requested-dealer-password.example.html",
+      "template": "ce-requested-dealer-password",
+      "variant": "example",
+      "subject": null,
+      "preheader": ""
+    },
+    {
       "file": "deal-reminder.example.html",
       "url": "/previews/deal-reminder.example.html",
       "template": "deal-reminder",
@@ -58,6 +66,16 @@
     }
   ],
   "grouped": {
+    "ce-requested-dealer-password": [
+      {
+        "file": "ce-requested-dealer-password.example.html",
+        "url": "/previews/ce-requested-dealer-password.example.html",
+        "template": "ce-requested-dealer-password",
+        "variant": "example",
+        "subject": null,
+        "preheader": ""
+      }
+    ],
     "deal-reminder": [
       {
         "file": "deal-reminder.example.html",
