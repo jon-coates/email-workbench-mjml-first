@@ -30,7 +30,7 @@
       "template": "deals-lost-summary",
       "variant": "example",
       "subject": "Update: you were unsuccessful in 3 deals",
-      "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Quantity 1 Location Sydney NSW Lost Reason Delivery date CE-10418 Vehicle Mazda CX-5 Maxx…"
+      "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Quantity 1 Location Sydney NSW CE-10418 Vehicle Mazda CX-5 Maxx Sport (Machine Grey)…"
     },
     {
       "file": "invitation.example.html",
@@ -103,7 +103,7 @@
         "template": "deals-lost-summary",
         "variant": "example",
         "subject": "Update: you were unsuccessful in 3 deals",
-        "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Quantity 1 Location Sydney NSW Lost Reason Delivery date CE-10418 Vehicle Mazda CX-5 Maxx…"
+        "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Quantity 1 Location Sydney NSW CE-10418 Vehicle Mazda CX-5 Maxx Sport (Machine Grey)…"
       }
     ],
     "invitation": [

@@ -72,6 +72,7 @@
             </td>
           </tr> -->
 
+          {{#if this.lostReason}}
           <tr>
             <td width="30%" style="padding:0 12px 0 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
               Lost Reason
@@ -80,6 +81,7 @@
               {{this.lostReason}}
             </td>
           </tr>
+          {{/if}}
 
 
         </mj-table>

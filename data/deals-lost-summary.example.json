@@ -2,7 +2,7 @@
     "dealer": {
       "firstName": "Alex"
     },
-    "dateRange": "15 Sep 2025",
+    "dateRange": "7 – 15 Sep 2025",
     "portalUrl": "https://exchange.carexpert.com.au/deals",
     "subscribedReason": "You are receiving this email because you have been invited to CarExpert Exchange.",
     "lostDeals": [
@@ -16,8 +16,7 @@
         },
         "quantity": 1,
         "customerLocation": "Sydney NSW",
-        "dealDeadline": "02 Sep 2025, 5:00 pm AEST",
-        "lostReason": "Delivery date"
+        "dealDeadline": "02 Sep 2025, 5:00 pm AEST"
       },
       {
         "dealID": "CE-10418",
