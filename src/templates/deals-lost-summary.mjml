@@ -9,9 +9,6 @@
 
     <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
-        <mj-text font-size="22px" line-height="26px" color="#111827" padding="0 0 8px 0">
-          <strong>Lost Opportunities: {{dateRange}}</strong>
-        </mj-text>
 
         <mj-text padding="0 0 8px 0">
           Hi {{dealer.firstName}},
