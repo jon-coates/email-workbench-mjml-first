@@ -45,7 +45,7 @@
             </td>
           </tr>
 
-          {{#if (eq this.quantity 1)}}
+          {{#if (eq this.quantity 2)}}
           <tr>
             <td width="30%" style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
               Quantity
@@ -55,7 +55,7 @@
             </td>
           </tr>
           {{/if}}
-          
+
           <tr>
             <td width="30%" style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
               Location
