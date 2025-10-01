@@ -8,6 +8,7 @@ const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 
 Handlebars.registerHelper('eq', (a, b) => a === b);
+Handlebars.registerHelper('gte', (a, b) => a >= b);
 Handlebars.registerHelper('json', (ctx) => JSON.stringify(ctx));
 
 const argv = yargs(hideBin(process.argv))
