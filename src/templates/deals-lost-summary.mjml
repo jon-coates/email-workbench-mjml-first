@@ -15,7 +15,7 @@
         </mj-text>
 
         <mj-text>
-          Here’s a summary of deals you participated in but did not win during <strong>{{dateRange}}</strong>.
+          Here’s a summary of deals you participated in but did not win during week commencing <strong>{{dateRange}}</strong>.
         </mj-text>
 
         <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
