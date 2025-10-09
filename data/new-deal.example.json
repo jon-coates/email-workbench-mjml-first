@@ -7,20 +7,24 @@
     },
     "deal": {
       "dealId": "12345",
-      "customerLocation": "Sydney, NSW",
+      "customerLocation": "Winton, NSW",
       "dealDeadline": "Tue 23 Sep 2025, 4:23 PM",
       "url": "https://exchange.carexpert.com.au/deals/12345",
       "vehicle": {
-        "make": "Suzuki",
-        "model": "Swift",
-        "variant": "Ascent Sport",
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Wildtrak",
         "colour": "White",
         "quantity": 1,
-        "note": "Silver alt colour. Cash buyer.",
-        "dateRequired": "23 Sep 2025"
+        "note": "Cash buyer, not fussed on colour. Needs speedy delivery.",
+        "dateRequired": "23 Oct 2025"
       },
       "tradeIn": {
-
+        "make": "Mazda",
+        "model": "CX-5",
+        "variant": "Maxx Sport",
+        "monthYear": "Aug 2018",
+        "note": "One owner, always garaged."
       }
     },
     "subscribedReason": "You are receiving this email because you are regestered as a dealer with CarExpert Exchange."
