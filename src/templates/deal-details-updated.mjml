@@ -2,7 +2,7 @@
   <mj-head>
     <mj-include path="../partials/responsive-styles.mjml" />
     <mj-include path="../partials/head-attributes.mjml" />
-    <mj-preview>⏱️ Quote by {{deal.dealDeadline}} • 📍 Delivery location {{deal.customerLocation}} • 🗓️ Delivery Date {{deal.vehicle.dateRequired}} • </mj-preview>
+    <mj-preview>The CarExpert team has updated deal #{{deal.dealId}}. Please review the changes and check the Exchange for full details.</mj-preview>
   </mj-head>
 
   <mj-body background-color="#F9FAFB">
