@@ -13,11 +13,19 @@
         <mj-text padding="0 0 8px 0">Hi {{dealer.firstName}} 👋,</mj-text>
 
         <mj-text>
-          You have been invited to <strong>CarExpert Exchange</strong>, the platform where you’ll receive and manage quotes for CarExpert buyers.
+          You're invited to join CarExpert Exchange, the new platform built to connect you directly with ready-to-buy customers from CarExpert.
         </mj-text>
 
         <mj-text padding="12px 0 0 0">
-          To activate your account and get started, click the button below:
+          By activating your account, you'll:
+        </mj-text>
+
+        <mj-text padding="4px 0 0 0">✔️ Receive qualified new-car enquiries, not cold leads</mj-text>
+        <mj-text padding="4px 0 0 0">✔️ Quote quickly and manage all offers in one place</mj-text>
+        <mj-text padding="4px 0 0 0">✔️ Pay only when a sale is made - no wasted spend</mj-text>
+
+        <mj-text padding="12px 0 0 0">
+          Click below to activate your account for free and start quoting:
         </mj-text>
 
         <mj-button href="{{deal.url}}" align="center" font-size="18px" padding="16px 0 0 0">
@@ -31,16 +39,15 @@
 
         <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
 
-        <mj-text padding="0 0 8px 0">
-          <strong>Tip:</strong> Add <a href="https://exchange.carexpert.com.au" color="#000000" text-decoration="underline">exchange.carexpert.com.au</a> to your ⭐️Bookmarks for easy future reference.
+        <mj-text padding="0 0 0 0">
+          <strong>Tip:</strong> Bookmark <a href="https://exchange.carexpert.com.au" color="#000000" text-decoration="underline">exchange.carexpert.com.au</a> ⭐ so it's always easy to find, and add this email address to your contacts so you never miss a deal.
         </mj-text>
+
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+
 
         <mj-text>
-          Once activated, you’ll receive an email notification every time a new deal is available for you to quote on. Simply log in to review the enquiry and submit your best offer.
-        </mj-text>
-
-        <mj-text padding="16px 0 0 0">
-          We’re excited to have you on board.
+          Once activated, you'll get email alerts each time a new deal is available. Simply log in, review the enquiry, and submit your best offer.
         </mj-text>
 
  <mj-include path="../partials/sign-off.mjml" />
@@ -50,3 +57,4 @@
     <mj-include path="../partials/footer.mjml" />
   </mj-body>
 </mjml>
+

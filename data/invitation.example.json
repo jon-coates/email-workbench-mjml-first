@@ -4,5 +4,8 @@
       "lastName": "Dealerson",
       "email": "david@example.com"
     },
+    "deal": {
+      "url": "https://exchange.carexpert.com.au/activate?token=example123"
+    },
     "subscribedReason": "You are receiving this email because you have been invited to CarExpert Exchange."
 }

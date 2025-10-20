@@ -37,7 +37,7 @@
       "url": "/previews/invitation.example.html",
       "template": "invitation",
       "variant": "example",
-      "subject": "Activate your CarExpert Exchange account",
+      "subject": "Welcome to CarExpert Exchange — your new way to quote smarter",
       "preheader": ""
     },
     {
@@ -46,7 +46,7 @@
       "template": "new-deal",
       "variant": "example",
       "subject": "New Quote Request: Ford Ranger Wildtrak (Deal #12345)",
-      "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Sydney, NSW • 🗓️ Delivery Date 23 Oct 2025 •"
+      "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Winton, NSW • 🗓️ Delivery Date 23 Oct 2025 •"
     },
     {
       "file": "password-reset.example.html",
@@ -112,7 +112,7 @@
         "url": "/previews/invitation.example.html",
         "template": "invitation",
         "variant": "example",
-        "subject": "Activate your CarExpert Exchange account",
+        "subject": "Welcome to CarExpert Exchange — your new way to quote smarter",
         "preheader": ""
       }
     ],
@@ -123,7 +123,7 @@
         "template": "new-deal",
         "variant": "example",
         "subject": "New Quote Request: Ford Ranger Wildtrak (Deal #12345)",
-        "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Sydney, NSW • 🗓️ Delivery Date 23 Oct 2025 •"
+        "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Winton, NSW • 🗓️ Delivery Date 23 Oct 2025 •"
       }
     ],
     "password-reset": [
