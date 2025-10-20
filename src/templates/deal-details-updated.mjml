@@ -1,0 +1,33 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+    <mj-preview>⏱️ Quote by {{deal.dealDeadline}} • 📍 Delivery location {{deal.customerLocation}} • 🗓️ Delivery Date {{deal.vehicle.dateRequired}} • </mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+  <mj-include path="../partials/header.mjml" />
+
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0 0 8px 0">Hi {{dealer.firstName}},</mj-text>
+        <mj-text>The CarExpert team has updated the details of a deal you're involved with.</mj-text>
+        <mj-text>Please review the updated information below and check the Exchange for full details.</mj-text>
+       </mj-column>
+      </mj-section>
+
+        <!-- Deal details (above deadline) -->
+        <mj-include path="../partials/deal-details.mjml" />
+
+        <mj-section background-color="#ffffff" padding="0 24px 0 24px">
+          <mj-column>
+            <mj-text>If you have any questions about these changes, please contact the CarExpert team.</mj-text>
+            <mj-include path="../partials/sign-off.mjml" />
+          </mj-column>
+        </mj-section>
+
+        <mj-include path="../partials/footer.mjml" />
+
+  </mj-body>
+</mjml>
+

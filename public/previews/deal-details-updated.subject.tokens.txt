@@ -1,0 +1,1 @@
+Deal Updated: {{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}} (Deal #{{deal.dealId}})
