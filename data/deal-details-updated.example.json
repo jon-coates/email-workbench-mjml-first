@@ -27,6 +27,42 @@
       "note": "One owner, always garaged."
     }
   },
+  "contactPerson": {
+    "firstName": "Sarah",
+    "lastName": "Thompson",
+    "phone": "+61 2 8123 4567",
+    "email": "sarah.thompson@carexpert.com.au"
+  },
+  "changes": [
+    {
+      "label": "Delivery Date",
+      "oldValue": "20 Oct 2025",
+      "newValue": "23 Oct 2025",
+      "type": "updated"
+    },
+    {
+      "label": "Customer Location",
+      "oldValue": "Sydney, NSW",
+      "newValue": "Winton, NSW",
+      "type": "updated"
+    },
+    {
+      "label": "Vehicle Colour",
+      "oldValue": "Silver",
+      "newValue": "White",
+      "type": "updated"
+    },
+    {
+      "label": "Accessory: Floor Mats",
+      "newValue": "Genuine Ford floor mats",
+      "type": "added"
+    },
+    {
+      "label": "Accessory: Paint Protection",
+      "oldValue": "Premium ceramic coating",
+      "type": "deleted"
+    }
+  ],
   "subscribedReason": "You are receiving this email because you are regestered as a dealer with CarExpert Exchange."
 }
 

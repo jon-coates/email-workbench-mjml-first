@@ -1,0 +1,34 @@
+<!-- What's Changed Section -->
+<mj-section background-color="#ffffff" padding="24px 24px 16px 24px">
+  <mj-column>
+    <mj-text font-size="16px" font-weight="600" line-height="20px" color="#111827" padding="0 0 8px 0">
+      📝 What's Changed:
+    </mj-text>
+    <mj-text font-size="14px" line-height="20px" color="#4b5563" padding="0 0 12px 0">
+      Deal #{{deal.dealId}} for {{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}} has been updated.
+    </mj-text>
+    <mj-table color="#111827" font-size="15px" line-height="20px" padding="0 0 16px">
+      {{#each changes}}
+      <tr>
+        <td style="padding-bottom:8px; vertical-align:top; width: 140px;">{{this.label}}:</td>
+        <td style="padding-bottom:8px; vertical-align:top">
+          {{#if (eq this.type "updated")}}
+            <span style="color:#6b7280; text-decoration:line-through;">{{this.oldValue}}</span>
+            <span style="color:#6b7280; padding:0 4px;">→</span>
+            <strong style="color:#111827;">{{this.newValue}}</strong>
+          {{/if}}
+          {{#if (eq this.type "added")}}
+            <strong style="color:#059669;">{{this.newValue}}</strong>
+            <span style="color:#059669; font-size:13px;"> (new)</span>
+          {{/if}}
+          {{#if (eq this.type "deleted")}}
+            <span style="color:#dc2626; text-decoration:line-through;">{{this.oldValue}}</span>
+            <span style="color:#dc2626; font-size:13px;"> (removed)</span>
+          {{/if}}
+        </td>
+      </tr>
+      {{/each}}
+    </mj-table>
+  </mj-column>
+</mj-section>
+

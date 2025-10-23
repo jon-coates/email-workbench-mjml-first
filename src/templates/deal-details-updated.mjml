@@ -12,16 +12,38 @@
       <mj-column>
         <mj-text padding="0 0 8px 0">Hi {{dealer.firstName}},</mj-text>
         <mj-text>The CarExpert team has updated the details of a deal you're involved with.</mj-text>
-        <mj-text>Please review the updated information below and check the Exchange for full details.</mj-text>
        </mj-column>
       </mj-section>
 
-        <!-- Deal details (above deadline) -->
-        <mj-include path="../partials/deal-details.mjml" />
+        <!-- Changes section (if any) -->
+        {{#if changes}}
+        <mj-include path="../partials/deal-changes.mjml" />
+        {{/if}}
+
+        <!-- Button -->
+        <mj-section padding="0 24px 24px 24px" background-color="#ffffff">
+          <mj-column>
+            <mj-button href="{{deal.url}}" font-size="18px" align="left" padding="0">
+              👉 View Updated Deal
+            </mj-button>
+          </mj-column>
+        </mj-section>
 
         <mj-section background-color="#ffffff" padding="0 24px 0 24px">
           <mj-column>
+            <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="0 0 16px 0" />
+            {{#if contactPerson}}
+            <mj-text padding="0 0 8px 0">If you have any questions about these changes, please contact:</mj-text>
+            <mj-text padding="0 0 4px 0"><strong>{{contactPerson.firstName}} {{contactPerson.lastName}}</strong></mj-text>
+            <mj-text padding="0 0 2px 0" font-size="15px" line-height="20px">
+              📧 <a href="mailto:{{contactPerson.email}}" style="color:#111827; text-decoration:underline;">{{contactPerson.email}}</a>
+            </mj-text>
+            <mj-text padding="0 0 12px 0" font-size="15px" line-height="20px">
+              📞 <a href="tel:{{contactPerson.phone}}" style="color:#111827; text-decoration:underline;">{{contactPerson.phone}}</a>
+            </mj-text>
+            {{else}}
             <mj-text>If you have any questions about these changes, please contact the CarExpert team.</mj-text>
+            {{/if}}
             <mj-include path="../partials/sign-off.mjml" />
           </mj-column>
         </mj-section>

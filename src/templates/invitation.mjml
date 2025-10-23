@@ -50,6 +50,7 @@
           Once activated, you'll get email alerts each time a new deal is available. Simply log in, review the enquiry, and submit your best offer.
         </mj-text>
 
+            <mj-text padding="16px 0 0 0">We're excited to have you on board.</mj-text>
  <mj-include path="../partials/sign-off.mjml" />
       </mj-column>
     </mj-section>
