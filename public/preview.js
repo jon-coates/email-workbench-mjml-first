@@ -25,7 +25,8 @@
     }
   
     let first = null;
-  
+    let allItems = []; // Store all items for URL matching
+
     // Build sidebar: From / To / Subject (no preheader)
     Object.keys(grouped).sort().forEach(tpl => {
       const group = document.createElement('div');
@@ -33,7 +34,7 @@
       const h = document.createElement('h2');
       h.textContent = tpl.replace(/[-_]+/g, ' ').toUpperCase();
       group.appendChild(h);
-  
+
       grouped[tpl].forEach(it => {
         const subject = it.subject || `${tpl} — ${it.variant}`;
         const a = document.createElement('a');
@@ -41,25 +42,27 @@
         a.className = 'item';
         a.dataset.url = it.url;
         a.dataset.subject = subject;
-        a.dataset.preheader = it.preheader || ''; // may be empty; we’ll display "none" if so
-  
+        a.dataset.preheader = it.preheader || ''; // may be empty; we'll display "none" if so
+        a.dataset.file = it.file; // Store file name for URL matching
+
         a.innerHTML = `
           <div class="from">${escapeHtml(cfg.from)}</div>
           <div class="to">To: ${escapeHtml(cfg.to)}</div>
           <div class="subject">${escapeHtml(subject)}</div>
         `;
-  
+
         a.onclick = (e) => {
           e.preventDefault();
-          select(it.url, subject, it.preheader || '');
+          selectTemplate(it.url, subject, it.preheader || '', it.file);
           document.querySelectorAll('.item').forEach(el => el.classList.remove('active'));
           a.classList.add('active');
         };
-  
+
+        allItems.push(a);
         if (!first) first = a;
         group.appendChild(a);
       });
-  
+
       listEl.appendChild(group);
     });
   
@@ -68,18 +71,47 @@
       const fromText = escapeHtml(cfg.from);
       const subjText = escapeHtml(subject || '');
       const preText = escapeHtml(preheader && preheader.trim() ? preheader : 'none');
-  
+
       subjectEl.innerHTML = `
         <div class="hdr-from">${fromText}</div>
         <div class="hdr-subject">${subjText}</div>
         <div class="hdr-preheader">Preheader: ${preText}</div>
       `;
     }
+
+    function selectTemplate(url, subject, preheader, file) {
+      select(url, subject, preheader);
+      
+      // Update URL with template parameter
+      const templateId = file.replace('.html', '');
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set('template', templateId);
+      const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+      history.pushState({ template: templateId }, '', newUrl);
+    }
   
+    // Check URL parameter for initial template selection
+    function getTemplateFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const templateParam = urlParams.get('template');
+      if (templateParam) {
+        // Find matching template by file name (without .html)
+        const matchingItem = allItems.find(item => {
+          const fileName = item.dataset.file.replace('.html', '');
+          return fileName === templateParam;
+        });
+        if (matchingItem) {
+          return matchingItem;
+        }
+      }
+      return first;
+    }
+
     // Default selection
-    if (first) {
-      first.classList.add('active');
-      select(first.dataset.url, first.dataset.subject, first.dataset.preheader);
+    const selectedItem = getTemplateFromUrl();
+    if (selectedItem) {
+      selectedItem.classList.add('active');
+      select(selectedItem.dataset.url, selectedItem.dataset.subject, selectedItem.dataset.preheader);
     }
   
     // Device width buttons
@@ -128,6 +160,18 @@
     // Initialize theme and add event listener
     initTheme();
     themeToggle.addEventListener('click', toggleTheme);
+
+    // Handle browser back/forward navigation
+    window.addEventListener('popstate', (event) => {
+      const selectedItem = getTemplateFromUrl();
+      if (selectedItem) {
+        // Clear all active states
+        document.querySelectorAll('.item').forEach(el => el.classList.remove('active'));
+        // Set new active item
+        selectedItem.classList.add('active');
+        select(selectedItem.dataset.url, selectedItem.dataset.subject, selectedItem.dataset.preheader);
+      }
+    });
 
     // Basic HTML escaper for safety
     function escapeHtml(s) {
