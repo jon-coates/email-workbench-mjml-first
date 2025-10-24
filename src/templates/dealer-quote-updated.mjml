@@ -1,0 +1,57 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+    <mj-preview>{{dealer.firstName}} {{dealer.lastName}} has updated their quote for deal #{{deal.dealId}}. Please review the changes and check the Exchange for full details.</mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+  <mj-include path="../partials/header.mjml" />
+
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0 0 8px 0">Hi {{teamMember.firstName}},</mj-text>
+        <mj-text>{{dealer.firstName}} {{dealer.lastName}}{{#if dealer.dealership}} from {{dealer.dealership}}{{/if}} has updated their quote for a deal you're monitoring.</mj-text>
+       </mj-column>
+      </mj-section>
+
+        <!-- Changes section (if any) -->
+        {{#if changes}}
+        <mj-include path="../partials/deal-changes.mjml" />
+        {{/if}}
+
+        <!-- Button -->
+        <mj-section padding="0 24px 24px 24px" background-color="#ffffff">
+          <mj-column>
+            <mj-button href="{{deal.url}}" font-size="18px" align="left" padding="0">
+              👉 View Updated Quote
+            </mj-button>
+          </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#ffffff" padding="0 24px 0 24px">
+          <mj-column>
+            <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="0 0 16px 0" />
+            <mj-text padding="0 0 8px 0">Dealer Details:</mj-text>
+            <mj-text padding="0 0 4px 0"><strong>{{dealer.firstName}} {{dealer.lastName}}</strong></mj-text>
+            <mj-text padding="0 0 2px 0" font-size="15px" line-height="20px">
+              📧 <a href="mailto:{{dealer.email}}" style="color:#111827; text-decoration:underline;">{{dealer.email}}</a>
+            </mj-text>
+            {{#if dealer.phone}}
+            <mj-text padding="0 0 12px 0" font-size="15px" line-height="20px">
+              📞 <a href="tel:{{dealer.phone}}" style="color:#111827; text-decoration:underline;">{{dealer.phone}}</a>
+            </mj-text>
+            {{/if}}
+            {{#if dealer.dealership}}
+            <mj-text padding="0 0 12px 0" font-size="15px" line-height="20px">
+              🏢 {{dealer.dealership}}
+            </mj-text>
+            {{/if}}
+            <mj-include path="../partials/sign-off.mjml" />
+          </mj-column>
+        </mj-section>
+
+        <mj-include path="../partials/footer.mjml" />
+
+  </mj-body>
+</mjml>

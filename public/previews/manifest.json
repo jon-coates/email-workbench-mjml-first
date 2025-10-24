@@ -33,6 +33,14 @@
       "preheader": "🎉 Deal won — we’ll be in touch to finalise next steps"
     },
     {
+      "file": "dealer-quote-updated.example.html",
+      "url": "/previews/dealer-quote-updated.example.html",
+      "template": "dealer-quote-updated",
+      "variant": "example",
+      "subject": "Quote Updated by David Dealerson: Ford Ranger Wildtrak (Deal #12345)",
+      "preheader": "David Dealerson has updated their quote for deal #12345. Please review the changes and check the Exchange for full details."
+    },
+    {
       "file": "deals-lost-summary.example.html",
       "url": "/previews/deals-lost-summary.example.html",
       "template": "deals-lost-summary",
@@ -112,6 +120,16 @@
         "variant": "example",
         "subject": "🎉 You’ve won a deal: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
         "preheader": "🎉 Deal won — we’ll be in touch to finalise next steps"
+      }
+    ],
+    "dealer-quote-updated": [
+      {
+        "file": "dealer-quote-updated.example.html",
+        "url": "/previews/dealer-quote-updated.example.html",
+        "template": "dealer-quote-updated",
+        "variant": "example",
+        "subject": "Quote Updated by David Dealerson: Ford Ranger Wildtrak (Deal #12345)",
+        "preheader": "David Dealerson has updated their quote for deal #12345. Please review the changes and check the Exchange for full details."
       }
     ],
     "deals-lost-summary": [

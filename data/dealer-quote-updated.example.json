@@ -1,0 +1,76 @@
+{
+  "teamMember": {
+    "firstName": "Sarah",
+    "lastName": "Thompson"
+  },
+  "dealer": {
+    "firstName": "David",
+    "lastName": "Dealerson",
+    "email": "david@example.com",
+    "phone": "+61 2 9876 5432",
+    "dealership": "Metro Ford Sydney"
+  },
+  "deal": {
+    "dealId": "12345",
+    "customerLocation": "Winton, NSW",
+    "dealDeadline": "Tue 23 Sep 2025, 4:23 PM",
+    "url": "https://exchange.carexpert.com.au/deals/12345",
+    "vehicle": {
+      "make": "Ford",
+      "model": "Ranger",
+      "variant": "Wildtrak",
+      "colour": "White",
+      "quantity": 1,
+      "note": "Cash buyer, not fussed on colour. Needs speedy delivery.",
+      "dateRequired": "23 Oct 2025"
+    },
+    "tradeIn": {
+      "make": "Mazda",
+      "model": "CX-5",
+      "variant": "Maxx Sport",
+      "monthYear": "Aug 2018",
+      "note": "One owner, always garaged."
+    }
+  },
+  "changes": [
+    {
+      "label": "Quote Price",
+      "oldValue": "$58,990",
+      "newValue": "$57,500",
+      "type": "updated"
+    },
+    {
+      "label": "Delivery Date",
+      "oldValue": "25 Oct 2025",
+      "newValue": "23 Oct 2025",
+      "type": "updated"
+    },
+    {
+      "label": "Delivery Fee",
+      "newValue": "$250 (included in quote)",
+      "type": "added"
+    },
+    {
+      "label": "Accessory: Floor Mats",
+      "newValue": "Genuine Ford floor mats - $150",
+      "type": "added"
+    },
+    {
+      "label": "Accessory: Paint Protection",
+      "oldValue": "Premium ceramic coating - $800",
+      "type": "deleted"
+    },
+    {
+      "label": "Trade-in Value",
+      "oldValue": "$18,500",
+      "newValue": "$19,200",
+      "type": "updated"
+    },
+    {
+      "label": "Dealer Notes",
+      "newValue": "Can deliver 2 days earlier than originally quoted. Floor mats in stock.",
+      "type": "added"
+    }
+  ],
+  "subscribedReason": "You are receiving this email because you are monitoring this deal on CarExpert Exchange."
+}
