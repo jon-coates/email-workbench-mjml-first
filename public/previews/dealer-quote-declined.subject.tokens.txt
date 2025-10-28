@@ -1,0 +1,2 @@
+{{#if tradeInOnly}}{{dealer.firstName}} {{dealer.lastName}} declined trade-in for Deal #{{deal.dealId}}{{else}}{{dealer.firstName}} {{dealer.lastName}} declined to participate in Deal #{{deal.dealId}}{{/if}}
+

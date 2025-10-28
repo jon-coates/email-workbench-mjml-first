@@ -1,0 +1,28 @@
+{
+  "tradeInOnly": false,
+  "contactPerson": {
+    "firstName": "Sarah",
+    "lastName": "Thompson",
+    "phone": "+61 2 8123 4567",
+    "email": "sarah.thompson@carexpert.com.au"
+  },
+  "dealer": {
+    "firstName": "David",
+    "lastName": "Dealerson",
+    "dealership": "Premier Motors",
+    "email": "david.dealerson@premier-motors.com.au",
+    "phone": "+61 3 9123 4567"
+  },
+  "deal": {
+    "dealId": "12345",
+    "url": "https://exchange.carexpert.com.au/deals/12345",
+    "vehicle": {
+      "make": "Ford",
+      "model": "Ranger",
+      "variant": "Wildtrak"
+    }
+  },
+  "dealerComment": "Unable to source the vehicle at this time. We can offer an alternative model if interested.",
+  "subscribedReason": "You are receiving this email because you are registered with CarExpert Exchange."
+}
+

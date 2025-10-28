@@ -1,0 +1,28 @@
+{
+  "tradeInOnly": true,
+  "contactPerson": {
+    "firstName": "Sarah",
+    "lastName": "Thompson",
+    "phone": "+61 2 8123 4567",
+    "email": "sarah.thompson@carexpert.com.au"
+  },
+  "dealer": {
+    "firstName": "Michael",
+    "lastName": "Car Dealer",
+    "dealership": "Premium Auto Group",
+    "email": "michael@premium-auto.com.au",
+    "phone": "+61 7 9876 5432"
+  },
+  "deal": {
+    "dealId": "98765",
+    "url": "https://exchange.carexpert.com.au/deals/98765",
+    "vehicle": {
+      "make": "Toyota",
+      "model": "Camry",
+      "variant": "Ascent Sport"
+    }
+  },
+  "dealerComment": "We are not interested in accepting the customer's trade-in vehicle due to its condition and high mileage.",
+  "subscribedReason": "You are receiving this email because you are registered with CarExpert Exchange."
+}
+

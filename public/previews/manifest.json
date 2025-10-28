@@ -41,6 +41,22 @@
       "preheader": "🎉 Deal won — we’ll be in touch to finalise next steps"
     },
     {
+      "file": "dealer-quote-declined.example.html",
+      "url": "/previews/dealer-quote-declined.example.html",
+      "template": "dealer-quote-declined",
+      "variant": "example",
+      "subject": "David Dealerson declined to participate in Deal #12345",
+      "preheader": "Dealer David Dealerson declined quote for Deal #12345."
+    },
+    {
+      "file": "dealer-quote-declined.trade-in.example.html",
+      "url": "/previews/dealer-quote-declined.trade-in.example.html",
+      "template": "dealer-quote-declined",
+      "variant": "trade-in.example",
+      "subject": "Michael Car Dealer declined trade-in for Deal #98765",
+      "preheader": "Dealer Michael Car Dealer declined quote for Deal #98765."
+    },
+    {
       "file": "dealer-quote-updated.example.html",
       "url": "/previews/dealer-quote-updated.example.html",
       "template": "dealer-quote-updated",
@@ -138,6 +154,24 @@
         "variant": "example",
         "subject": "🎉 You’ve won a deal: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
         "preheader": "🎉 Deal won — we’ll be in touch to finalise next steps"
+      }
+    ],
+    "dealer-quote-declined": [
+      {
+        "file": "dealer-quote-declined.example.html",
+        "url": "/previews/dealer-quote-declined.example.html",
+        "template": "dealer-quote-declined",
+        "variant": "example",
+        "subject": "David Dealerson declined to participate in Deal #12345",
+        "preheader": "Dealer David Dealerson declined quote for Deal #12345."
+      },
+      {
+        "file": "dealer-quote-declined.trade-in.example.html",
+        "url": "/previews/dealer-quote-declined.trade-in.example.html",
+        "template": "dealer-quote-declined",
+        "variant": "trade-in.example",
+        "subject": "Michael Car Dealer declined trade-in for Deal #98765",
+        "preheader": "Dealer Michael Car Dealer declined quote for Deal #98765."
       }
     ],
     "dealer-quote-updated": [

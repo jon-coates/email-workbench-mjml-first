@@ -1,0 +1,81 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+    <mj-preview>Dealer {{dealer.firstName}} {{dealer.lastName}} declined quote for Deal #{{deal.dealId}}.</mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+  <mj-include path="../partials/header.mjml" />
+
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0 0 8px 0">Hi {{contactPerson.firstName}},</mj-text>
+        <mj-raw>{{#if tradeInOnly}}</mj-raw>
+          <mj-raw>{{#if deal.vehicle.make}}</mj-raw>
+          <mj-text>{{dealer.firstName}} {{dealer.lastName}}{{#if dealer.dealership}} from {{dealer.dealership}}{{/if}} has declined the trade-in component of Deal #{{deal.dealId}} ({{deal.vehicle.make}} {{deal.vehicle.model}}<mj-raw>{{#if deal.vehicle.variant}}</mj-raw><mj-raw>&nbsp;{{deal.vehicle.variant}}</mj-raw><mj-raw>{{/if}}</mj-raw>).</mj-text>
+          <mj-raw>{{else}}</mj-raw>
+          <mj-text>{{dealer.firstName}} {{dealer.lastName}}{{#if dealer.dealership}} from {{dealer.dealership}}{{/if}} has declined the trade-in component of Deal #{{deal.dealId}}.</mj-text>
+          <mj-raw>{{/if}}</mj-raw>
+        <mj-raw>{{else}}</mj-raw>
+          <mj-raw>{{#if deal.vehicle.make}}</mj-raw>
+          <mj-text>{{dealer.firstName}} {{dealer.lastName}}{{#if dealer.dealership}} from {{dealer.dealership}}{{/if}} has declined to participate in Deal #{{deal.dealId}} ({{deal.vehicle.make}} {{deal.vehicle.model}}<mj-raw>{{#if deal.vehicle.variant}}</mj-raw><mj-raw>&nbsp;{{deal.vehicle.variant}}</mj-raw><mj-raw>{{/if}}</mj-raw>).</mj-text>
+          <mj-raw>{{else}}</mj-raw>
+          <mj-text>{{dealer.firstName}} {{dealer.lastName}}{{#if dealer.dealership}} from {{dealer.dealership}}{{/if}} has declined to participate in Deal #{{deal.dealId}}.</mj-text>
+          <mj-raw>{{/if}}</mj-raw>
+        <mj-raw>{{/if}}</mj-raw>
+       </mj-column>
+      </mj-section>
+
+        <!-- Dealer comment section -->
+        <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+          <mj-column>
+            <mj-raw>{{#if dealerComment}}</mj-raw>
+            <mj-text padding="0">
+              <strong>Comment from dealer:</strong><br/>
+              {{dealerComment}}
+            </mj-text>
+            <mj-raw>{{else}}</mj-raw>
+            <mj-text padding="0" color="#6b7280" font-style="italic">
+              No comment was provided by the dealer.
+            </mj-text>
+            <mj-raw>{{/if}}</mj-raw>
+          </mj-column>
+        </mj-section>
+
+        <!-- Dealer information section -->
+        <mj-section padding="24px 24px 24px 24px" background-color="#ffffff">
+          <mj-column>
+            <mj-text padding="0 ">{{dealer.firstName}} {{dealer.lastName}}</mj-text>
+            <mj-raw>{{#if dealer.dealership}}</mj-raw>
+            <mj-text padding="0">{{dealer.dealership}}</mj-text>
+            <mj-raw>{{/if}}</mj-raw>
+            <mj-raw>{{#if dealer.email}}</mj-raw>
+            <mj-text padding="8px 0 4px 0" font-size="15px" line-height="20px">
+              📧 <a href="mailto:{{dealer.email}}" style="color:#111827; text-decoration:underline;">{{dealer.email}}</a>
+            </mj-text>
+            <mj-raw>{{/if}}</mj-raw>
+            <mj-raw>{{#if dealer.phone}}</mj-raw>
+            <mj-text padding="0 0 12px 0" font-size="15px" line-height="20px">
+              📞 <a href="tel:{{dealer.phone}}" style="color:#111827; text-decoration:underline;">{{dealer.phone}}</a>
+            </mj-text>
+            <mj-raw>{{/if}}</mj-raw>
+          </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#ffffff" padding="0 24px 0 24px">
+          <mj-column>
+            <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="0 0 16px 0" />
+            
+            <mj-button href="{{deal.url}}" background-color="#1E293B" border-radius="8px" padding="12px 0" align="left">
+              Go to the deal
+            </mj-button>
+            <mj-include path="../partials/sign-off.mjml" />
+          </mj-column>
+        </mj-section>
+
+        <mj-include path="../partials/footer.mjml" />
+
+  </mj-body>
+</mjml>
+
