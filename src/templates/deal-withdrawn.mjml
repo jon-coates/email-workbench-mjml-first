@@ -1,0 +1,61 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+    <mj-preview>Deal #{{deal.dealId}} has been withdrawn.</mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+  <mj-include path="../partials/header.mjml" />
+
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0 0 8px 0">Hi {{dealer.firstName}},</mj-text>
+        <mj-raw>{{#if deal.vehicle.make}}</mj-raw>
+        <mj-text>The CarExpert team has withdrawn deal #{{deal.dealId}} ({{deal.vehicle.make}} {{deal.vehicle.model}}<mj-raw>{{#if deal.vehicle.variant}}</mj-raw><mj-raw>&nbsp;{{deal.vehicle.variant}}</mj-raw><mj-raw>{{/if}}</mj-raw>).</mj-text>
+        <mj-raw>{{else}}</mj-raw>
+        <mj-text>The CarExpert team has withdrawn deal #{{deal.dealId}}.</mj-text>
+        <mj-raw>{{/if}}</mj-raw>
+       </mj-column>
+      </mj-section>
+
+        <!-- Withdrawal note section -->
+        <mj-section padding="24px 24px 24px 24px" background-color="#ffffff">
+          <mj-column>
+            <mj-raw>{{#if withdrawalNote}}</mj-raw>
+            <mj-text padding="0">
+              <strong>Note from CarExpert:</strong><br/>
+              {{withdrawalNote}}
+            </mj-text>
+            <mj-raw>{{else}}</mj-raw>
+            <mj-text padding="0" color="#6b7280" font-style="italic">
+              No additional information was provided about this withdrawal.
+            </mj-text>
+            <mj-raw>{{/if}}</mj-raw>
+          </mj-column>
+        </mj-section>
+
+        <mj-section background-color="#ffffff" padding="0 24px 0 24px">
+          <mj-column>
+            <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="0 0 16px 0" />
+            <mj-raw>{{#if contactPerson}}</mj-raw>
+            <mj-text padding="0 0 8px 0">If you have any questions about this withdrawal, please contact:</mj-text>
+            <mj-text padding="0 0 4px 0"><strong>{{contactPerson.firstName}} {{contactPerson.lastName}}</strong></mj-text>
+            <mj-text padding="0 0 2px 0" font-size="15px" line-height="20px">
+              📧 <a href="mailto:{{contactPerson.email}}" style="color:#111827; text-decoration:underline;">{{contactPerson.email}}</a>
+            </mj-text>
+            <mj-text padding="0 0 12px 0" font-size="15px" line-height="20px">
+              📞 <a href="tel:{{contactPerson.phone}}" style="color:#111827; text-decoration:underline;">{{contactPerson.phone}}</a>
+            </mj-text>
+            <mj-raw>{{else}}</mj-raw>
+            <mj-text>If you have any questions about this withdrawal, please contact the CarExpert team.</mj-text>
+            <mj-raw>{{/if}}</mj-raw>
+            <mj-include path="../partials/sign-off.mjml" />
+          </mj-column>
+        </mj-section>
+
+        <mj-include path="../partials/footer.mjml" />
+
+  </mj-body>
+</mjml>
+

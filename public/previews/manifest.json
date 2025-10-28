@@ -25,6 +25,14 @@
       "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Sydney, NSW • 🗓️ Delivery Date 23 Sep 2025 •"
     },
     {
+      "file": "deal-withdrawn.example.html",
+      "url": "/previews/deal-withdrawn.example.html",
+      "template": "deal-withdrawn",
+      "variant": "example",
+      "subject": "Deal #12345 withdrawn: Ford Ranger",
+      "preheader": "Deal #12345 has been withdrawn."
+    },
+    {
       "file": "deal-won.example.html",
       "url": "/previews/deal-won.example.html",
       "template": "deal-won",
@@ -110,6 +118,16 @@
         "variant": "example",
         "subject": "Last chance: Toyota Corolla Ascent Sport",
         "preheader": "⏱️ Quote by Tue 23 Sep 2025, 4:23 PM • 📍 Delivery location Sydney, NSW • 🗓️ Delivery Date 23 Sep 2025 •"
+      }
+    ],
+    "deal-withdrawn": [
+      {
+        "file": "deal-withdrawn.example.html",
+        "url": "/previews/deal-withdrawn.example.html",
+        "template": "deal-withdrawn",
+        "variant": "example",
+        "subject": "Deal #12345 withdrawn: Ford Ranger",
+        "preheader": "Deal #12345 has been withdrawn."
       }
     ],
     "deal-won": [

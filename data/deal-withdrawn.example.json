@@ -1,0 +1,25 @@
+{
+  "dealer": {
+    "firstName": "David",
+    "lastName": "Dealerson",
+    "email": "david@example.com"
+  },
+  "deal": {
+    "dealId": "12345",
+    "url": "https://exchange.carexpert.com.au/deals/12345",
+    "vehicle": {
+      "make": "Ford",
+      "model": "Ranger",
+      "variant": "Wildtrak"
+    }
+  },
+  "contactPerson": {
+    "firstName": "Sarah",
+    "lastName": "Thompson",
+    "phone": "+61 2 8123 4567",
+    "email": "sarah.thompson@carexpert.com.au"
+  },
+  "withdrawalNote": "The customer has decided to purchase through another dealer due to timing constraints.",
+  "subscribedReason": "You are receiving this email because you are registered as a dealer with CarExpert Exchange."
+}
+
