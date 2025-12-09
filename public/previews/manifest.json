@@ -73,6 +73,22 @@
       "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Location Sydney NSW CE-10418 Vehicle Mazda CX-5 Maxx Sport (Machine Grey) Quantity 2…"
     },
     {
+      "file": "intent-to-purchase-confirmation.example.html",
+      "url": "/previews/intent-to-purchase-confirmation.example.html",
+      "template": "intent-to-purchase-confirmation",
+      "variant": "example",
+      "subject": "Thank you for submitting your intent to purchase form",
+      "preheader": "Thank you for submitting your intent to purchase form for Toyota RAV4 Cruiser"
+    },
+    {
+      "file": "intent-to-purchase-reminder.example.html",
+      "url": "/previews/intent-to-purchase-reminder.example.html",
+      "template": "intent-to-purchase-reminder",
+      "variant": "example",
+      "subject": "Complete your intent to purchase form to lock in your pricing",
+      "preheader": "Complete your intent to purchase form to lock in your pricing for Toyota RAV4 Cruiser"
+    },
+    {
       "file": "invitation.example.html",
       "url": "/previews/invitation.example.html",
       "template": "invitation",
@@ -192,6 +208,26 @@
         "variant": "example",
         "subject": "Update: you were unsuccessful in 3 deals",
         "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Location Sydney NSW CE-10418 Vehicle Mazda CX-5 Maxx Sport (Machine Grey) Quantity 2…"
+      }
+    ],
+    "intent-to-purchase-confirmation": [
+      {
+        "file": "intent-to-purchase-confirmation.example.html",
+        "url": "/previews/intent-to-purchase-confirmation.example.html",
+        "template": "intent-to-purchase-confirmation",
+        "variant": "example",
+        "subject": "Thank you for submitting your intent to purchase form",
+        "preheader": "Thank you for submitting your intent to purchase form for Toyota RAV4 Cruiser"
+      }
+    ],
+    "intent-to-purchase-reminder": [
+      {
+        "file": "intent-to-purchase-reminder.example.html",
+        "url": "/previews/intent-to-purchase-reminder.example.html",
+        "template": "intent-to-purchase-reminder",
+        "variant": "example",
+        "subject": "Complete your intent to purchase form to lock in your pricing",
+        "preheader": "Complete your intent to purchase form to lock in your pricing for Toyota RAV4 Cruiser"
       }
     ],
     "invitation": [

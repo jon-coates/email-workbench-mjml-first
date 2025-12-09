@@ -1,0 +1,69 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+    <mj-preview>Complete your intent to purchase form to lock in your pricing for {{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}}</mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+  <mj-include path="../partials/header-customer.mjml" />
+
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0 0 8px 0">Hi {{customer.firstName}},</mj-text>
+        <mj-text>To lock in your pricing, please complete your intent to purchase form. This will secure your quote and allow us to proceed with preparing your contract.</mj-text>
+       </mj-column>
+      </mj-section>
+
+      <!-- Vehicle details -->
+      <mj-section background-color="#ffffff" padding="24px 24px 0 24px">
+        <mj-column padding="0">
+          <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🚗 Your vehicle:</mj-text>
+          <mj-raw>{{#if vehicle.make}}</mj-raw>
+            <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
+              <strong>{{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}}</strong>
+            </mj-text>
+            <mj-text font-size="16px" line-height="20px" padding="0 0 2px">
+              {{#if vehicle.colour}}
+                <span style="white-space:nowrap;">Colour: <strong>{{vehicle.colour}}</strong></span>
+              {{/if}}
+            </mj-text>
+          <mj-raw>{{/if}}</mj-raw>
+        </mj-column>
+      </mj-section>
+
+      <!-- CTA Button -->
+      <mj-section background-color="#ffffff" padding="0 24px 24px 24px">
+        <mj-column>
+          <mj-button href="{{form.url}}" font-size="18px" align="left" padding="16px 0 0 0" letter-spacing="0.02em" background-color="#EB0800" color="#ffffff">
+            Complete Intent to Purchase Form
+          </mj-button>
+          <mj-text padding="8px 0 0" font-size="12px" line-height="16px" color="#6b7280">
+            Can&#39;t click the button? <a href="{{form.url}}" style="color:#6b7280; text-decoration:underline;">Open the form</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Specialist contact -->
+      <mj-section background-color="#ffffff" padding="24px 24px 0 24px">
+        <mj-column>
+          <mj-text padding="0 0 8px 0">If you have any questions, you can contact your dedicated new car specialist:</mj-text>
+          <mj-text padding="0" font-size="15px" line-height="20px">
+            <strong>{{specialist.name}}</strong><br/>
+            📞 <a href="tel:{{specialist.phone}}" style="color:#111827; text-decoration:underline;">{{specialist.phone}}</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#ffffff" padding="0 24px 0 24px">
+        <mj-column>
+          <mj-text>Don&#39;t miss out on securing your pricing. Complete the form as soon as possible.</mj-text>
+          <mj-include path="../partials/sign-off.mjml" />
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="../partials/footer.mjml" />
+
+  </mj-body>
+</mjml>
+
