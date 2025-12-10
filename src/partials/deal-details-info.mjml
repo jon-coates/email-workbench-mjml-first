@@ -1,0 +1,101 @@
+<!-- Meta + divider -->
+<mj-section background-color="#ffffff" padding="24px 24px 0 24px">
+  <mj-column padding="0">
+    <mj-table color="#111827" font-size="15px" line-height="20px" padding="0 0 12px">
+      {{#if deal.dealDeadline}}
+      <tr>
+        <td style="padding-bottom:4px; vertical-align:top; width: 120px;">Quote Deadline:</td>
+        <td style="color:#b91c1c; padding-bottom:4px; vertical-align:top"><strong>{{deal.dealDeadline}}</strong></td>
+      </tr>
+      {{/if}}
+
+      {{#if deal.dealId}}
+      <tr>
+        <td style="padding-bottom:4px; vertical-align:top">Deal ID:</td>
+        <td style="color:#111827; padding-bottom:4px; vertical-align:top">{{deal.dealId}}</td>
+      </tr>
+      {{/if}}
+
+      {{#if deal.vehicle.dateRequired}}
+      <tr>
+        <td style="padding-bottom:4px; vertical-align:top">Requested Delivery:</td>
+        <td style="color:#111827; padding-bottom:4px; vertical-align:top">{{deal.vehicle.dateRequired}}</td>
+      </tr>
+      {{/if}}
+
+      <tr>
+        <td style="padding-bottom:4px; vertical-align:top">Location:</td>
+        <td style="color:#111827; padding-bottom:4px; vertical-align:top">{{deal.customerLocation}}</td>
+      </tr>
+
+      {{#if dealer.note}}
+      <tr>
+        <td style="padding-bottom:4px; vertical-align:top">Additional Notes:</td>
+        <td style="color:#111827; padding-bottom:4px; vertical-align:top">{{dealer.note}}</td>
+      </tr>
+      {{/if}}
+    </mj-table>
+
+    <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="0" />
+  </mj-column>
+</mj-section>
+
+<!-- Two-column section: New vehicle (L) + Trade-in (R) -->
+<mj-section background-color="#ffffff" padding="0 24px 24px 24px">
+  <!-- Left column: New vehicle -->
+  <mj-column width="50%" padding="24px 12px 0 0" vertical-align="top">
+      <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🚗 New vehicle:</mj-text>
+    <mj-raw>{{#if deal.vehicle.make}}</mj-raw>
+
+      <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
+        <strong>{{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}}</strong>
+      </mj-text>
+
+      <mj-text font-size="16px" line-height="20px" padding="0 0 2px">
+        {{#if deal.vehicle.colour}}
+          <span style="white-space:nowrap;">Colour: <strong>{{deal.vehicle.colour}}</strong></span>
+        {{/if}}
+        {{#if deal.vehicle.colour}}{{#if deal.vehicle.quantity}}
+          <span aria-hidden="true" style="padding:04px;">•</span>
+        {{/if}}{{/if}}
+        {{#if deal.vehicle.quantity}}
+          <span style="white-space:nowrap;">Quantity: <strong>{{deal.vehicle.quantity}}</strong></span>
+        {{/if}}
+      </mj-text>
+
+      {{#if deal.vehicle.note}}
+        <mj-text font-size="16px" line-height="20px" padding="8px 0 8px">
+          "<em>{{deal.vehicle.note}}</em>"
+        </mj-text>
+      {{/if}}
+          <mj-raw>{{else}}</mj-raw>
+      <mj-text font-size="14px" line-height="20px" color="#6b7280" padding="0 0 8px"><em>No new vehicle</em></mj-text>
+
+    <mj-raw>{{/if}}</mj-raw>
+  </mj-column>
+
+  <!-- Right column: Trade-in -->
+  <mj-column width="50%" padding="24px 0 0 0" vertical-align="top">
+    <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🔁 Trade-in:</mj-text>
+
+    <mj-raw>{{#if deal.tradeIn.make}}</mj-raw>
+      <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
+        <strong>
+          {{deal.tradeIn.make}} {{deal.tradeIn.model}}{{#if deal.tradeIn.variant}} {{deal.tradeIn.variant}}{{/if}}
+        </strong>
+      </mj-text>
+
+            <mj-text font-size="16px" line-height="20px" padding="0 0 2px">
+        {{#if deal.tradeIn.monthYear}}Build Month/Year: <strong> ({{deal.tradeIn.monthYear}})</strong>{{/if}}
+      </mj-text>
+
+      <mj-raw>{{#if deal.tradeIn.note}}</mj-raw>
+        <mj-text font-size="16px" line-height="20px" padding="8px 0 8px">
+          "<em>{{deal.tradeIn.note}}</em>"
+        </mj-text>
+      <mj-raw>{{/if}}</mj-raw>
+    <mj-raw>{{else}}</mj-raw>
+      <mj-text font-size="14px" line-height="20px" color="#6b7280" padding="0 0 8px"><em>No trade-in</em></mj-text>
+    <mj-raw>{{/if}}</mj-raw>
+  </mj-column>
+</mj-section>

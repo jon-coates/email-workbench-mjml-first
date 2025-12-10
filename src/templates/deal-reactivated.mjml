@@ -1,0 +1,34 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+    <mj-preview>⏱️ Quote by {{deal.dealDeadline}} • 📍 Delivery location {{deal.customerLocation}} • 🗓️ Delivery Date {{deal.vehicle.dateRequired}} • </mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+  <mj-include path="../partials/header.mjml" />
+
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0 0 8px 0">Hi {{dealer.firstName}},</mj-text>
+        <mj-text><strong>The deadline for this deal has been extended. You still have time to submit your quote for this request.</strong></mj-text>
+       </mj-column>
+      </mj-section>
+
+        <!-- Deal details (above deadline) -->
+        <mj-include path="../partials/deal-details.mjml" />
+
+        <mj-section background-color="#ffffff" padding="0 24px 0 24px">
+          <mj-column>
+            <mj-text>Don't miss out on the chance to secure this deal.</mj-text>
+            <mj-include path="../partials/sign-off.mjml" />
+
+          </mj-column>
+        </mj-section>
+
+        <mj-include path="../partials/footer.mjml" />
+
+
+  </mj-body>
+</mjml>
+
