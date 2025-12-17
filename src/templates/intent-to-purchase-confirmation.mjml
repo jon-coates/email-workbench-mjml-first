@@ -16,21 +16,7 @@
       </mj-section>
 
       <!-- Vehicle details -->
-      <mj-section background-color="#ffffff" padding="24px 24px 0 24px">
-        <mj-column padding="0">
-          <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🚗 Your vehicle:</mj-text>
-          <mj-raw>{{#if vehicle.make}}</mj-raw>
-            <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
-              <strong>{{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}}</strong>
-            </mj-text>
-            <mj-text font-size="16px" line-height="20px" padding="0 0 2px">
-              {{#if vehicle.colour}}
-                <span style="white-space:nowrap;">Colour: <strong>{{vehicle.colour}}</strong></span>
-              {{/if}}
-            </mj-text>
-          <mj-raw>{{/if}}</mj-raw>
-        </mj-column>
-      </mj-section>
+      <mj-include path="../partials/vehicle-details-customer.mjml" />
 
       <!-- Next steps -->
       <mj-section background-color="#ffffff" padding="24px 24px 0 24px">

@@ -8,7 +8,7 @@
     "make": "Toyota",
     "model": "RAV4",
     "variant": "Cruiser",
-    "colour": "Silver"
+    "exteriorColour": "Silver"
   },
   "form": {
     "url": "https://carexpert.com.au/intent-to-purchase/abc123xyz"
