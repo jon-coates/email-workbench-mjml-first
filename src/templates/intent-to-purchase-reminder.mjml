@@ -11,7 +11,11 @@
     <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
         <mj-text padding="0 0 8px 0">Hi {{customer.firstName}},</mj-text>
+        <mj-raw>{{#if customMessage}}</mj-raw>
+        <mj-text>{{customMessage}}</mj-text>
+        <mj-raw>{{else}}</mj-raw>
         <mj-text>To lock in your pricing, please complete your intent to purchase form. This will secure your quote and allow us to proceed with preparing your contract.</mj-text>
+        <mj-raw>{{/if}}</mj-raw>
        </mj-column>
       </mj-section>
 

@@ -93,7 +93,7 @@
       "url": "/previews/intent-to-purchase-reminder.example.html",
       "template": "intent-to-purchase-reminder",
       "variant": "example",
-      "subject": "Complete your intent to purchase form to lock in your pricing",
+      "subject": "Urgent: Complete your intent to purchase form",
       "preheader": "Complete your intent to purchase form to lock in your pricing for Toyota RAV4 Cruiser"
     },
     {
@@ -244,7 +244,7 @@
         "url": "/previews/intent-to-purchase-reminder.example.html",
         "template": "intent-to-purchase-reminder",
         "variant": "example",
-        "subject": "Complete your intent to purchase form to lock in your pricing",
+        "subject": "Urgent: Complete your intent to purchase form",
         "preheader": "Complete your intent to purchase form to lock in your pricing for Toyota RAV4 Cruiser"
       }
     ],

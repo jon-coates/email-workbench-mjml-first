@@ -17,6 +17,8 @@
     "name": "Michael Chen",
     "phone": "+61 2 8123 4567"
   },
-  "subscribedReason": "You are receiving this email because you have an active enquiry with CarExpert."
+  "subscribedReason": "You are receiving this email because you have an active enquiry with CarExpert.",
+  "customSubject": "Urgent: Complete your intent to purchase form",
+  "customMessage": "Your custom message here that replaces the default sentence."
 }
 
