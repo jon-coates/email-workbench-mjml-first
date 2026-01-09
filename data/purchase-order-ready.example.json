@@ -1,0 +1,30 @@
+{
+  "dealer": {
+    "firstName": "David",
+    "lastName": "Dealerson",
+    "dealership": "Premier Motors",
+    "email": "david.dealerson@premier-motors.com.au",
+    "phone": "+61 3 9123 4567"
+  },
+  "deal": {
+    "dealId": "12345",
+    "url": "https://exchange.carexpert.com.au/deals/12345/purchase-order",
+    "customerLocation": "Sydney, NSW",
+    "vehicle": {
+      "make": "Ford",
+      "model": "Ranger",
+      "variant": "Wildtrak",
+      "colour": "White",
+      "quantity": 1,
+      "dateRequired": "23 Oct 2025",
+      "note": "Customer prefers white but flexible on colour if delivery is quicker."
+    }
+  },
+  "contactPerson": {
+    "firstName": "Sarah",
+    "lastName": "Thompson",
+    "phone": "+61 2 8123 4567",
+    "email": "sarah.thompson@carexpert.com.au"
+  },
+  "subscribedReason": "You are receiving this email because you are registered with CarExpert Exchange."
+}

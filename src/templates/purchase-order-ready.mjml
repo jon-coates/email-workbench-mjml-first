@@ -1,0 +1,109 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+    <mj-preview>You have a purchase order ready to approve for {{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}} (Deal #{{deal.dealId}})</mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+    <mj-include path="../partials/header.mjml" />
+
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0 0 8px 0">Hi {{dealer.firstName}},</mj-text>
+        <mj-text padding="0 0 16px 0">You have a purchase order ready to approve for the following vehicle.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Vehicle details -->
+    <mj-section background-color="#ffffff" padding="0 24px 24px 24px">
+      <mj-column>
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="0 0 16px 0" />
+
+        <mj-text font-size="20px" line-height="26px" color="#111827" padding="0 0 16px 0">
+          <strong>🚗 Vehicle Details</strong>
+        </mj-text>
+
+        <mj-table color="#111827" font-size="15px" line-height="20px" padding="0 0 12px">
+          {{#if deal.dealId}}
+          <tr>
+            <td style="padding-bottom:8px; vertical-align:top; width: 140px; color:#6b7280;">Deal ID:</td>
+            <td style="color:#111827; padding-bottom:8px; vertical-align:top"><strong>{{deal.dealId}}</strong></td>
+          </tr>
+          {{/if}}
+
+          <tr>
+            <td style="padding-bottom:8px; vertical-align:top; color:#6b7280;">Vehicle:</td>
+            <td style="color:#111827; padding-bottom:8px; vertical-align:top">
+              <strong>{{deal.vehicle.make}} {{deal.vehicle.model}}{{#if deal.vehicle.variant}} {{deal.vehicle.variant}}{{/if}}</strong>
+            </td>
+          </tr>
+
+          {{#if deal.vehicle.colour}}
+          <tr>
+            <td style="padding-bottom:8px; vertical-align:top; color:#6b7280;">Colour:</td>
+            <td style="color:#111827; padding-bottom:8px; vertical-align:top">{{deal.vehicle.colour}}</td>
+          </tr>
+          {{/if}}
+
+          {{#if deal.vehicle.quantity}}
+          <tr>
+            <td style="padding-bottom:8px; vertical-align:top; color:#6b7280;">Quantity:</td>
+            <td style="color:#111827; padding-bottom:8px; vertical-align:top">{{deal.vehicle.quantity}}</td>
+          </tr>
+          {{/if}}
+
+          {{#if deal.customerLocation}}
+          <tr>
+            <td style="padding-bottom:8px; vertical-align:top; color:#6b7280;">Delivery Location:</td>
+            <td style="color:#111827; padding-bottom:8px; vertical-align:top">{{deal.customerLocation}}</td>
+          </tr>
+          {{/if}}
+
+          {{#if deal.vehicle.dateRequired}}
+          <tr>
+            <td style="padding-bottom:8px; vertical-align:top; color:#6b7280;">Required by:</td>
+            <td style="color:#111827; padding-bottom:8px; vertical-align:top">{{deal.vehicle.dateRequired}}</td>
+          </tr>
+          {{/if}}
+
+          {{#if deal.vehicle.note}}
+          <tr>
+            <td style="padding-bottom:8px; vertical-align:top; color:#6b7280;">Notes:</td>
+            <td style="color:#111827; padding-bottom:8px; vertical-align:top"><em>{{deal.vehicle.note}}</em></td>
+          </tr>
+          {{/if}}
+        </mj-table>
+
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+
+        <!-- Button to approve -->
+        <mj-button href="{{deal.url}}" font-size="18px" align="left" padding="16px 0 0 0">
+          👉 Review &amp; Approve Purchase Order
+        </mj-button>
+        <mj-text padding="8px 0 0" font-size="12px" line-height="16px" color="#6b7280">
+          Can&#39;t click the button? <a href="{{deal.url}}" style="color:#6b7280; text-decoration:underline;">Open the purchase order</a>
+        </mj-text>
+
+        {{#if contactPerson}}
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+        <mj-text padding="0 0 8px 0">If you have any questions about this purchase order, please contact:</mj-text>
+        <mj-text padding="0 0 4px 0"><strong>{{contactPerson.firstName}} {{contactPerson.lastName}}</strong></mj-text>
+        <mj-text padding="0 0 2px 0" font-size="15px" line-height="20px">
+          📧 <a href="mailto:{{contactPerson.email}}" style="color:#111827; text-decoration:underline;">{{contactPerson.email}}</a>
+        </mj-text>
+        <mj-text padding="0 0 12px 0" font-size="15px" line-height="20px">
+          📞 <a href="tel:{{contactPerson.phone}}" style="color:#111827; text-decoration:underline;">{{contactPerson.phone}}</a>
+        </mj-text>
+        {{else}}
+        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+        <mj-text>If you have any questions about this purchase order, please contact the CarExpert team.</mj-text>
+        {{/if}}
+        <mj-include path="../partials/sign-off.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../partials/footer.mjml" />
+
+  </mj-body>
+</mjml>

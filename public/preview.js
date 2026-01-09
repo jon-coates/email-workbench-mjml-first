@@ -6,6 +6,7 @@
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('.theme-icon');
     const themeText = themeToggle.querySelector('.theme-text');
+    const searchInput = document.getElementById('search-input');
   
     // Load manifest + optional config for "From" and "To" lines
     const [manRes, cfgRes] = await Promise.all([
@@ -26,6 +27,7 @@
   
     let first = null;
     let allItems = []; // Store all items for URL matching
+    let allGroups = []; // Store all groups for filtering
 
     // Build sidebar: From / To / Subject (no preheader)
     Object.keys(grouped).sort().forEach(tpl => {
@@ -44,6 +46,7 @@
         a.dataset.subject = subject;
         a.dataset.preheader = it.preheader || ''; // may be empty; we'll display "none" if so
         a.dataset.file = it.file; // Store file name for URL matching
+        a.dataset.templateName = tpl.replace(/[-_]+/g, ' '); // Store template name for searching
 
         a.innerHTML = `
           <div class="from">${escapeHtml(cfg.from)}</div>
@@ -63,6 +66,7 @@
         group.appendChild(a);
       });
 
+      allGroups.push(group);
       listEl.appendChild(group);
     });
   
@@ -112,6 +116,45 @@
     if (selectedItem) {
       selectedItem.classList.add('active');
       select(selectedItem.dataset.url, selectedItem.dataset.subject, selectedItem.dataset.preheader);
+    }
+
+    // Search filtering functionality
+    function filterTemplates(query) {
+      const searchQuery = query.trim().toLowerCase();
+      
+      if (!searchQuery) {
+        // Show all items and groups if search is empty
+        allItems.forEach(item => {
+          item.style.display = '';
+        });
+        allGroups.forEach(group => {
+          group.style.display = '';
+        });
+        return;
+      }
+
+      // Filter items based on template name and subject
+      allItems.forEach(item => {
+        const templateName = item.dataset.templateName.toLowerCase();
+        const subject = item.dataset.subject.toLowerCase();
+        const matches = templateName.includes(searchQuery) || subject.includes(searchQuery);
+        item.style.display = matches ? '' : 'none';
+      });
+
+      // Hide groups that have no visible items
+      allGroups.forEach(group => {
+        const visibleItems = Array.from(group.querySelectorAll('.item')).filter(
+          item => item.style.display !== 'none'
+        );
+        group.style.display = visibleItems.length > 0 ? '' : 'none';
+      });
+    }
+
+    // Add event listener for search input
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        filterTemplates(e.target.value);
+      });
     }
   
     // Device width buttons

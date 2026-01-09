@@ -93,7 +93,7 @@
       "url": "/previews/intent-to-purchase-reminder.example.html",
       "template": "intent-to-purchase-reminder",
       "variant": "example",
-      "subject": "Urgent: Complete your intent to purchase form",
+      "subject": "Complete your intent to purchase form to lock in your pricing",
       "preheader": "Complete your intent to purchase form to lock in your pricing for Toyota RAV4 Cruiser"
     },
     {
@@ -127,6 +127,14 @@
       "variant": "example",
       "subject": "Your CarExpert Exchange password was successfully reset",
       "preheader": ""
+    },
+    {
+      "file": "purchase-order-ready.example.html",
+      "url": "/previews/purchase-order-ready.example.html",
+      "template": "purchase-order-ready",
+      "variant": "example",
+      "subject": "Purchase Order Ready: Ford Ranger Wildtrak (Deal #12345)",
+      "preheader": "You have a purchase order ready to approve for Ford Ranger Wildtrak (Deal #12345)"
     }
   ],
   "grouped": {
@@ -244,7 +252,7 @@
         "url": "/previews/intent-to-purchase-reminder.example.html",
         "template": "intent-to-purchase-reminder",
         "variant": "example",
-        "subject": "Urgent: Complete your intent to purchase form",
+        "subject": "Complete your intent to purchase form to lock in your pricing",
         "preheader": "Complete your intent to purchase form to lock in your pricing for Toyota RAV4 Cruiser"
       }
     ],
@@ -286,6 +294,16 @@
         "variant": "example",
         "subject": "Your CarExpert Exchange password was successfully reset",
         "preheader": ""
+      }
+    ],
+    "purchase-order-ready": [
+      {
+        "file": "purchase-order-ready.example.html",
+        "url": "/previews/purchase-order-ready.example.html",
+        "template": "purchase-order-ready",
+        "variant": "example",
+        "subject": "Purchase Order Ready: Ford Ranger Wildtrak (Deal #12345)",
+        "preheader": "You have a purchase order ready to approve for Ford Ranger Wildtrak (Deal #12345)"
       }
     ]
   }

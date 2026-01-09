@@ -59,6 +59,32 @@
     margin:0 8px 16px;
   }
 
+  .search-container {
+    margin:0 8px 16px;
+  }
+
+  .search-input {
+    width:100%;
+    padding:8px 12px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    color:var(--key);
+    border-radius:8px;
+    font-size:13px;
+    font-family:inherit;
+    transition:all 0.2s ease;
+  }
+
+  .search-input::placeholder {
+    color:var(--muted);
+  }
+
+  .search-input:focus {
+    outline:none;
+    background:var(--hover);
+    border-color:var(--border-2);
+  }
+
   .theme-btn {
     display:flex;
     align-items:center;
