@@ -5,8 +5,7 @@
 </mj-section>
 <mj-section padding="16px 16px 0 16px" background-color="#ffffff" border-radius="24px 24px 0 0">
   <mj-column padding="0">
-    <mj-image css-class="hide-on-mobile" padding="0" width="650px" max-height="117px" src="/assets/email-header-customer.png" alt="CarExpert Logo"></mj-image>
-    <mj-image css-class="hide-on-desktop" padding="0" width="650px" max-height="197px" src="/assets/email-header-customer-mobile.png" alt="CarExpert Logo"></mj-image>
+    <mj-image padding="0" width="650px" max-height="117px" src="/assets/email-header-customer.png" alt="CarExpert Logo"></mj-image>
   </mj-column>
 </mj-section>
 
