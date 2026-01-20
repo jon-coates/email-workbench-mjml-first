@@ -1,0 +1,21 @@
+{
+  "dealer": {
+    "firstName": "David"
+  },
+  "deal": {
+    "dealId": "12345",
+    "url": "https://exchange.carexpert.com.au/deals/12345/documents",
+    "vehicle": {
+      "make": "Toyota",
+      "model": "RAV4",
+      "variant": "GXL Hybrid"
+    }
+  },
+  "contactPerson": {
+    "firstName": "Sarah",
+    "lastName": "Thompson",
+    "email": "sarah.thompson@carexpert.com.au",
+    "phone": "+61 2 8123 4567"
+  },
+  "subscribedReason": "You are receiving this email because you are registered with CarExpert Exchange."
+}

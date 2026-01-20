@@ -9,6 +9,14 @@
       "preheader": ""
     },
     {
+      "file": "contract-documents-reminder.example.html",
+      "url": "/previews/contract-documents-reminder.example.html",
+      "template": "contract-documents-reminder",
+      "variant": "example",
+      "subject": "Action Required: Upload Contract Documents for Toyota RAV4 GXL Hybrid (Deal #12345)",
+      "preheader": "Action required: Please upload contract documents for Toyota RAV4 GXL Hybrid (Deal #12345)"
+    },
+    {
       "file": "deal-details-updated.example.html",
       "url": "/previews/deal-details-updated.example.html",
       "template": "deal-details-updated",
@@ -146,6 +154,16 @@
         "variant": "example",
         "subject": "Reset your CarExpert Exchange password",
         "preheader": ""
+      }
+    ],
+    "contract-documents-reminder": [
+      {
+        "file": "contract-documents-reminder.example.html",
+        "url": "/previews/contract-documents-reminder.example.html",
+        "template": "contract-documents-reminder",
+        "variant": "example",
+        "subject": "Action Required: Upload Contract Documents for Toyota RAV4 GXL Hybrid (Deal #12345)",
+        "preheader": "Action required: Please upload contract documents for Toyota RAV4 GXL Hybrid (Deal #12345)"
       }
     ],
     "deal-details-updated": [
