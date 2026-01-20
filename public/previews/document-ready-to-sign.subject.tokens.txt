@@ -1,0 +1,1 @@
+{{document.name}} Ready to Sign: {{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}}

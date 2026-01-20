@@ -1,0 +1,20 @@
+{
+  "customer": {
+    "firstName": "Emma"
+  },
+  "vehicle": {
+    "make": "Toyota",
+    "model": "RAV4",
+    "variant": "GXL Hybrid",
+    "exteriorColour": "Silver"
+  },
+  "document": {
+    "name": "Sales Contract",
+    "url": "https://carexpert.com.au/documents/sign/abc123xyz"
+  },
+  "specialist": {
+    "name": "Michael Chen",
+    "phone": "+61 2 8123 4567"
+  },
+  "subscribedReason": "You are receiving this email because you have an active enquiry with CarExpert."
+}

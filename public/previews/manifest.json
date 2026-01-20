@@ -89,6 +89,14 @@
       "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Location Sydney NSW CE-10418 Vehicle Mazda CX-5 Maxx Sport (Machine Grey) Quantity 2…"
     },
     {
+      "file": "document-ready-to-sign.example.html",
+      "url": "/previews/document-ready-to-sign.example.html",
+      "template": "document-ready-to-sign",
+      "variant": "example",
+      "subject": "Sales Contract Ready to Sign: Toyota RAV4 GXL Hybrid",
+      "preheader": "Your Sales Contract is ready to sign for your Toyota RAV4"
+    },
+    {
       "file": "intent-to-purchase-confirmation.example.html",
       "url": "/previews/intent-to-purchase-confirmation.example.html",
       "template": "intent-to-purchase-confirmation",
@@ -252,6 +260,16 @@
         "variant": "example",
         "subject": "Update: you were unsuccessful in 3 deals",
         "preheader": "CE-10411 Vehicle Hyundai i30 Active (Polar White) Location Sydney NSW CE-10418 Vehicle Mazda CX-5 Maxx Sport (Machine Grey) Quantity 2…"
+      }
+    ],
+    "document-ready-to-sign": [
+      {
+        "file": "document-ready-to-sign.example.html",
+        "url": "/previews/document-ready-to-sign.example.html",
+        "template": "document-ready-to-sign",
+        "variant": "example",
+        "subject": "Sales Contract Ready to Sign: Toyota RAV4 GXL Hybrid",
+        "preheader": "Your Sales Contract is ready to sign for your Toyota RAV4"
       }
     ],
     "intent-to-purchase-confirmation": [
