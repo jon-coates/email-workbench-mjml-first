@@ -2,7 +2,7 @@
   <mj-head>
     <mj-include path="../partials/responsive-styles.mjml" />
     <mj-include path="../partials/head-attributes.mjml" />
-    <mj-preview>Complete your intent to purchase form to lock in your pricing for {{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}}</mj-preview>
+    <mj-preview>Your offer expires soon – complete your intent to purchase form to lock in your {{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}}</mj-preview>
   </mj-head>
 
   <mj-body background-color="#F9FAFB">
@@ -34,8 +34,19 @@
         </mj-column>
       </mj-section>
 
-      <!-- Specialist contact -->
+      <!-- Urgency alert -->
       <mj-section background-color="#ffffff" padding="24px 24px 0 24px">
+        <mj-column>
+          <mj-text padding="0">
+            <div style="background-color:#FEF9E7; border:1px solid #F4D03F; border-radius:4px; padding:12px 16px;">
+              <strong>Please note:</strong> This offer expires in 48 hours or at the end of the month, whichever comes first. Complete the form now to secure your deal.
+            </div>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Specialist contact -->
+      <mj-section background-color="#ffffff" padding="16px 24px 0 24px">
         <mj-column>
           <mj-text padding="0 0 8px 0">If you have any questions, you can contact your dedicated new car specialist:</mj-text>
           <mj-text padding="0" font-size="15px" line-height="20px">
@@ -47,7 +58,6 @@
 
       <mj-section background-color="#ffffff" padding="16px 24px 0 24px">
         <mj-column>
-          <mj-text>Don&#39;t miss out on securing your pricing. Complete the form as soon as possible.</mj-text>
           <mj-include path="../partials/sign-off.mjml" />
         </mj-column>
       </mj-section>

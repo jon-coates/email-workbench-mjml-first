@@ -109,8 +109,8 @@
       "url": "/previews/intent-to-purchase-reminder.example.html",
       "template": "intent-to-purchase-reminder",
       "variant": "example",
-      "subject": "Complete your intent to purchase form to lock in your pricing",
-      "preheader": "Complete your intent to purchase form to lock in your pricing for Toyota RAV4 Cruiser"
+      "subject": "Your offer expires in 48 hours – action required",
+      "preheader": "Your offer expires soon – complete your intent to purchase form to lock in your Toyota RAV4 Cruiser"
     },
     {
       "file": "invitation.example.html",
@@ -288,8 +288,8 @@
         "url": "/previews/intent-to-purchase-reminder.example.html",
         "template": "intent-to-purchase-reminder",
         "variant": "example",
-        "subject": "Complete your intent to purchase form to lock in your pricing",
-        "preheader": "Complete your intent to purchase form to lock in your pricing for Toyota RAV4 Cruiser"
+        "subject": "Your offer expires in 48 hours – action required",
+        "preheader": "Your offer expires soon – complete your intent to purchase form to lock in your Toyota RAV4 Cruiser"
       }
     ],
     "invitation": [
