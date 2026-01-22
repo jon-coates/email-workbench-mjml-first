@@ -1,2 +1,2 @@
-Your offer expires in 48 hours – action required
+Your {{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}} offer is being held
 

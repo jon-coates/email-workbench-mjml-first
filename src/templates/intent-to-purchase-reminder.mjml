@@ -2,7 +2,7 @@
   <mj-head>
     <mj-include path="../partials/responsive-styles.mjml" />
     <mj-include path="../partials/head-attributes.mjml" />
-    <mj-preview>Your offer expires soon – complete your intent to purchase form to lock in your {{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}}</mj-preview>
+    <mj-preview>Complete your intent to purchase within 48 hours or by month-end to keep it active.</mj-preview>
   </mj-head>
 
   <mj-body background-color="#F9FAFB">
@@ -11,10 +11,15 @@
     <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
         <mj-text padding="0 0 8px 0">Hi {{customer.firstName}},</mj-text>
+        <mj-text>You're very close to securing your {{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}}.</mj-text>
+        <mj-text>We've done the work to line up this offer with the dealer, but we can only hold it for a limited time. Confirming your intent to purchase lets us lock this in and continue the process on your behalf.</mj-text>
         <mj-raw>{{#if customMessage}}</mj-raw>
-        <mj-text>{{customMessage}}</mj-text>
-        <mj-raw>{{else}}</mj-raw>
-        <mj-text>To lock in your pricing, please complete your intent to purchase form. This will secure your quote and allow us to proceed with preparing your contract.</mj-text>
+        <mj-text padding="16px 0 0 0">
+          <div style="background-color:#F3F4F6; border-radius:2px; padding:16px 16px;">
+            <strong style="font-size:13px; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em;">A note from your specialist</strong><br/>
+            {{customMessage}}
+          </div>
+        </mj-text>
         <mj-raw>{{/if}}</mj-raw>
        </mj-column>
       </mj-section>
@@ -39,7 +44,7 @@
         <mj-column>
           <mj-text padding="0">
             <div style="background-color:#FEF9E7; border:1px solid #F4D03F; border-radius:4px; padding:12px 16px;">
-              <strong>Please note:</strong> This offer expires in 48 hours or at the end of the month, whichever comes first. Complete the form now to secure your deal.
+              <strong>Please note:</strong> We're holding this offer with the dealer for a short period. Completing the Intent To Purchase form within 48 hours or by month-end (whichever comes first) helps ensure we can proceed and keep this vehicle available for you.
             </div>
           </mj-text>
         </mj-column>
@@ -48,7 +53,7 @@
       <!-- Specialist contact -->
       <mj-section background-color="#ffffff" padding="16px 24px 0 24px">
         <mj-column>
-          <mj-text padding="0 0 8px 0">If you have any questions, you can contact your dedicated new car specialist:</mj-text>
+          <mj-text padding="0 0 8px 0">If you have any questions or would like to talk it through, your dedicated New Car Specialist is here to help:</mj-text>
           <mj-text padding="0" font-size="15px" line-height="20px">
             <strong>{{specialist.name}}</strong><br/>
             📞 <a href="tel:{{specialist.phone}}" style="color:#111827; text-decoration:underline;">{{specialist.phone}}</a>

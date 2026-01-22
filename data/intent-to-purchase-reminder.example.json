@@ -19,6 +19,6 @@
   },
   "subscribedReason": "You are receiving this email because you have an active enquiry with CarExpert.",
   "customSubject": "Urgent: Complete your intent to purchase form",
-  "customMessage": "Your custom message here that replaces the default sentence."
+  "customMessage": "Optional custom message from the NCS team member."
 }
 
