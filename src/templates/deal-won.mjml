@@ -2,7 +2,7 @@
   <mj-head>
     <mj-include path="../partials/responsive-styles.mjml" />
     <mj-include path="../partials/head-attributes.mjml" />
-        <mj-preview>🎉 Deal won — we’ll be in touch to finalise next steps</mj-preview>
+        <mj-preview>🎉 Deal won — view your purchase order</mj-preview>
   </mj-head>
 
 
@@ -86,7 +86,7 @@
         </mj-table>
 
         <mj-button href="{{deal.url}}" align="left" padding="16px 0 0 0">
-          👉 View the full deal details
+          View Purchase Order
         </mj-button>
         <mj-text padding="8px 0 0" font-size="12px" line-height="16px" color="#6b7280">
           Can&#39;t click the button?
