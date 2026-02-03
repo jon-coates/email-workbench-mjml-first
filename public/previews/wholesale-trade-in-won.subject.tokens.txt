@@ -1,0 +1,1 @@
+🎉 You've won a trade-in: {{tradeIn.year}} {{tradeIn.make}} {{tradeIn.model}}{{#if tradeIn.variant}} {{tradeIn.variant}}{{/if}} (Deal #{{deal.dealID}})

@@ -54,7 +54,7 @@
       "template": "deal-won",
       "variant": "example",
       "subject": "🎉 You’ve won a deal: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
-      "preheader": "🎉 Deal won — we’ll be in touch to finalise next steps"
+      "preheader": "🎉 Deal won — view your purchase order"
     },
     {
       "file": "dealer-quote-declined.example.html",
@@ -151,6 +151,14 @@
       "variant": "example",
       "subject": "Purchase Order Ready: Ford Ranger Wildtrak (Deal #12345)",
       "preheader": "You have a purchase order ready to approve for Ford Ranger Wildtrak (Deal #12345)"
+    },
+    {
+      "file": "wholesale-trade-in-won.example.html",
+      "url": "/previews/wholesale-trade-in-won.example.html",
+      "template": "wholesale-trade-in-won",
+      "variant": "example",
+      "subject": "🎉 You've won a trade-in: 2019 Hyundai Tucson Active X (Deal #10512)",
+      "preheader": "You've won a trade-in — sign your purchase order"
     }
   ],
   "grouped": {
@@ -221,7 +229,7 @@
         "template": "deal-won",
         "variant": "example",
         "subject": "🎉 You’ve won a deal: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
-        "preheader": "🎉 Deal won — we’ll be in touch to finalise next steps"
+        "preheader": "🎉 Deal won — view your purchase order"
       }
     ],
     "dealer-quote-declined": [
@@ -340,6 +348,16 @@
         "variant": "example",
         "subject": "Purchase Order Ready: Ford Ranger Wildtrak (Deal #12345)",
         "preheader": "You have a purchase order ready to approve for Ford Ranger Wildtrak (Deal #12345)"
+      }
+    ],
+    "wholesale-trade-in-won": [
+      {
+        "file": "wholesale-trade-in-won.example.html",
+        "url": "/previews/wholesale-trade-in-won.example.html",
+        "template": "wholesale-trade-in-won",
+        "variant": "example",
+        "subject": "🎉 You've won a trade-in: 2019 Hyundai Tucson Active X (Deal #10512)",
+        "preheader": "You've won a trade-in — sign your purchase order"
       }
     ]
   }
