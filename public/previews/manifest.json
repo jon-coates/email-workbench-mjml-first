@@ -97,6 +97,22 @@
       "preheader": "Your Sales Contract is ready to sign for your Toyota RAV4"
     },
     {
+      "file": "document-withdrawn-customer.example.html",
+      "url": "/previews/document-withdrawn-customer.example.html",
+      "template": "document-withdrawn-customer",
+      "variant": "example",
+      "subject": "Update on your Sales Contract: Toyota RAV4 GXL Hybrid",
+      "preheader": "An update on your Sales Contract for your Toyota RAV4"
+    },
+    {
+      "file": "document-withdrawn-dealer.example.html",
+      "url": "/previews/document-withdrawn-dealer.example.html",
+      "template": "document-withdrawn-dealer",
+      "variant": "example",
+      "subject": "Sales Contract Withdrawn: Toyota RAV4 GXL Hybrid",
+      "preheader": "Sales Contract has been withdrawn for Toyota RAV4"
+    },
+    {
       "file": "intent-to-purchase-confirmation.example.html",
       "url": "/previews/intent-to-purchase-confirmation.example.html",
       "template": "intent-to-purchase-confirmation",
@@ -278,6 +294,26 @@
         "variant": "example",
         "subject": "Sales Contract Ready to Sign: Toyota RAV4 GXL Hybrid",
         "preheader": "Your Sales Contract is ready to sign for your Toyota RAV4"
+      }
+    ],
+    "document-withdrawn-customer": [
+      {
+        "file": "document-withdrawn-customer.example.html",
+        "url": "/previews/document-withdrawn-customer.example.html",
+        "template": "document-withdrawn-customer",
+        "variant": "example",
+        "subject": "Update on your Sales Contract: Toyota RAV4 GXL Hybrid",
+        "preheader": "An update on your Sales Contract for your Toyota RAV4"
+      }
+    ],
+    "document-withdrawn-dealer": [
+      {
+        "file": "document-withdrawn-dealer.example.html",
+        "url": "/previews/document-withdrawn-dealer.example.html",
+        "template": "document-withdrawn-dealer",
+        "variant": "example",
+        "subject": "Sales Contract Withdrawn: Toyota RAV4 GXL Hybrid",
+        "preheader": "Sales Contract has been withdrawn for Toyota RAV4"
       }
     ],
     "intent-to-purchase-confirmation": [

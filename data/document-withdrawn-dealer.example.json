@@ -1,0 +1,22 @@
+{
+  "dealer": {
+    "firstName": "David"
+  },
+  "vehicle": {
+    "make": "Toyota",
+    "model": "RAV4",
+    "variant": "GXL Hybrid",
+    "colour": "Silver"
+  },
+  "document": {
+    "name": "Sales Contract"
+  },
+  "withdrawalReason": "Customer has requested changes to the financing terms.",
+  "contactPerson": {
+    "firstName": "Sarah",
+    "lastName": "Thompson",
+    "phone": "+61 2 8123 4567",
+    "email": "sarah.thompson@carexpert.com.au"
+  },
+  "subscribedReason": "You are receiving this email because you are registered as a dealer with CarExpert Exchange."
+}

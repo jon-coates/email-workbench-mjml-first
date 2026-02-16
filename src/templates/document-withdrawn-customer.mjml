@@ -2,7 +2,7 @@
   <mj-head>
     <mj-include path="../partials/responsive-styles.mjml" />
     <mj-include path="../partials/head-attributes.mjml" />
-    <mj-preview>Your {{document.name}} is ready to sign for your {{vehicle.make}} {{vehicle.model}}</mj-preview>
+    <mj-preview>An update on your {{document.name}} for your {{vehicle.make}} {{vehicle.model}}</mj-preview>
   </mj-head>
 
   <mj-body background-color="#F9FAFB">
@@ -11,24 +11,12 @@
     <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
       <mj-column>
         <mj-text padding="0 0 8px 0">Hi {{customer.firstName}},</mj-text>
-        <mj-text>Great news! A document <strong>{{document.name}}</strong> has been created and is ready for you to sign. Please review and sign the document at your earliest convenience.</mj-text>
+        <mj-text>We're sorry, your document <strong>{{document.name}}</strong> is no longer available. A new version will be prepared and sent to you when it's ready.</mj-text>
        </mj-column>
       </mj-section>
 
       <!-- Vehicle details -->
       <mj-include path="../partials/vehicle-details-customer.mjml" />
-
-      <!-- CTA Button -->
-      <mj-section background-color="#ffffff" padding="24px 24px 0 24px">
-        <mj-column>
-          <mj-button background-color="#EB0800" color="#ffffff" border-radius="8px" font-size="16px" font-weight="600" inner-padding="14px 32px" href="{{document.url}}">
-            Sign document
-          </mj-button>
-          <mj-text padding="8px 0 0 0" font-size="13px" color="#6B7280" align="center">
-            Or copy this link: <a href="{{document.url}}" style="color:#EB0800;">{{document.url}}</a>
-          </mj-text>
-        </mj-column>
-      </mj-section>
 
       <!-- Specialist contact -->
       <mj-section background-color="#ffffff" padding="24px 24px 0 24px">
