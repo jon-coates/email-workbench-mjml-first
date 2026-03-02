@@ -97,6 +97,14 @@
       "preheader": "Your Sales Contract is ready to sign for your Toyota RAV4"
     },
     {
+      "file": "document-signed-customer.example.html",
+      "url": "/previews/document-signed-customer.example.html",
+      "template": "document-signed-customer",
+      "variant": "example",
+      "subject": "You've signed your Sales Contract: Toyota RAV4 GXL Hybrid",
+      "preheader": "You've successfully signed your Sales Contract for your Toyota RAV4"
+    },
+    {
       "file": "document-withdrawn-customer.example.html",
       "url": "/previews/document-withdrawn-customer.example.html",
       "template": "document-withdrawn-customer",
@@ -294,6 +302,16 @@
         "variant": "example",
         "subject": "Sales Contract Ready to Sign: Toyota RAV4 GXL Hybrid",
         "preheader": "Your Sales Contract is ready to sign for your Toyota RAV4"
+      }
+    ],
+    "document-signed-customer": [
+      {
+        "file": "document-signed-customer.example.html",
+        "url": "/previews/document-signed-customer.example.html",
+        "template": "document-signed-customer",
+        "variant": "example",
+        "subject": "You've signed your Sales Contract: Toyota RAV4 GXL Hybrid",
+        "preheader": "You've successfully signed your Sales Contract for your Toyota RAV4"
       }
     ],
     "document-withdrawn-customer": [
