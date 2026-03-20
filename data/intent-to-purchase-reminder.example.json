@@ -5,10 +5,17 @@
     "email": "emma.johnson@example.com"
   },
   "vehicle": {
-    "make": "Toyota",
-    "model": "RAV4",
-    "variant": "Cruiser",
-    "exteriorColour": "Silver"
+    "make": "Hyundai",
+    "model": "Kona",
+    "variant": "Premium",
+    "transmission": "Automatic",
+    "fuel": "Hybrid",
+    "bodyType": "SUV",
+    "drive": "FWD",
+    "exteriorColour": "Mirage Green",
+    "interiorColour": "Black",
+    "factoryOptions": ["Tow Bar", "Brushbar"],
+    "dealerAccessories": ["Rubber floor mats", "Rubber tray mat", "Roofrack"]
   },
   "form": {
     "url": "https://carexpert.com.au/intent-to-purchase/abc123xyz"
@@ -21,4 +28,3 @@
   "customSubject": "Urgent: Complete your intent to purchase form",
   "customMessage": "Optional custom message from the NCS team member."
 }
-

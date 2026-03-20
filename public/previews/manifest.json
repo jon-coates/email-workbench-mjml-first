@@ -118,14 +118,14 @@
       "template": "intent-to-purchase-confirmation",
       "variant": "example",
       "subject": "Thank you for submitting your intent to purchase form",
-      "preheader": "Thank you for submitting your intent to purchase form for Toyota RAV4 Cruiser"
+      "preheader": "Thank you for submitting your intent to purchase form for Hyundai Kona Premium"
     },
     {
       "file": "intent-to-purchase-reminder.example.html",
       "url": "/previews/intent-to-purchase-reminder.example.html",
       "template": "intent-to-purchase-reminder",
       "variant": "example",
-      "subject": "Your Toyota RAV4 Cruiser offer is being held",
+      "subject": "Your Hyundai Kona Premium offer is being held",
       "preheader": "Complete your intent to purchase within 48 hours or by month-end to keep it active."
     },
     {
@@ -323,7 +323,7 @@
         "template": "intent-to-purchase-confirmation",
         "variant": "example",
         "subject": "Thank you for submitting your intent to purchase form",
-        "preheader": "Thank you for submitting your intent to purchase form for Toyota RAV4 Cruiser"
+        "preheader": "Thank you for submitting your intent to purchase form for Hyundai Kona Premium"
       }
     ],
     "intent-to-purchase-reminder": [
@@ -332,7 +332,7 @@
         "url": "/previews/intent-to-purchase-reminder.example.html",
         "template": "intent-to-purchase-reminder",
         "variant": "example",
-        "subject": "Your Toyota RAV4 Cruiser offer is being held",
+        "subject": "Your Hyundai Kona Premium offer is being held",
         "preheader": "Complete your intent to purchase within 48 hours or by month-end to keep it active."
       }
     ],

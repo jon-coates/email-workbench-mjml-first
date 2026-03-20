@@ -10,6 +10,7 @@ const { hideBin } = require('yargs/helpers');
 Handlebars.registerHelper('eq', (a, b) => a === b);
 Handlebars.registerHelper('gte', (a, b) => a >= b);
 Handlebars.registerHelper('json', (ctx) => JSON.stringify(ctx));
+Handlebars.registerHelper('inc', (n) => n + 1);
 
 const argv = yargs(hideBin(process.argv))
   .option('template', { type: 'string' })

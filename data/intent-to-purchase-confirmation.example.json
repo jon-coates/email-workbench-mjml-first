@@ -5,10 +5,17 @@
     "email": "emma.johnson@example.com"
   },
   "vehicle": {
-    "make": "Toyota",
-    "model": "RAV4",
-    "variant": "Cruiser",
-    "exteriorColour": "Silver"
+    "make": "Hyundai",
+    "model": "Kona",
+    "variant": "Premium",
+    "transmission": "Automatic",
+    "fuel": "Hybrid",
+    "bodyType": "SUV",
+    "drive": "FWD",
+    "exteriorColour": "Mirage Green",
+    "interiorColour": "Black",
+    "factoryOptions": ["Tow Bar", "Brushbar"],
+    "dealerAccessories": ["Rubber floor mats", "Rubber tray mat", "Roofrack"]
   },
   "specialist": {
     "name": "Michael Chen",
@@ -16,4 +23,3 @@
   },
   "subscribedReason": "You are receiving this email because you have an active enquiry with CarExpert."
 }
-

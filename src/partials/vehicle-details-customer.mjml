@@ -1,19 +1,100 @@
 <!-- Vehicle details -->
 <mj-section background-color="#ffffff" padding="24px 24px 0 24px">
   <mj-column padding="0">
-    <mj-text font-size="16px" line-height="1.4" padding="0 0 6px">🚗 Your vehicle:</mj-text>
-    <mj-raw>{{#if vehicle.make}}</mj-raw>
-      <mj-text font-size="18px" line-height="24px" color="#111827" padding="0 0 4px">
-        <strong>{{vehicle.make}} {{vehicle.model}}{{#if vehicle.variant}} {{vehicle.variant}}{{/if}}</strong>
-      </mj-text>
-      <mj-text font-size="16px" line-height="20px" padding="0 0 2px">
+    <mj-text padding="0" font-size="14px" line-height="20px">
+      <table style="width:100%; border-collapse:collapse;">
+        <tr>
+          <td colspan="2" style="padding:0 0 16px 0;">
+            <strong style="font-size:16px; color:#111827;">Vehicle details</strong>
+          </td>
+        </tr>
+        {{#if vehicle.make}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%;">Make</td>
+          <td style="padding:12px 0; color:#111827;">{{vehicle.make}}</td>
+        </tr>
+        {{/if}}
+        {{#if vehicle.model}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%;">Model</td>
+          <td style="padding:12px 0; color:#111827;">{{vehicle.model}}</td>
+        </tr>
+        {{/if}}
+        {{#if vehicle.variant}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%;">Variant</td>
+          <td style="padding:12px 0; color:#111827;">{{vehicle.variant}}</td>
+        </tr>
+        {{/if}}
+        {{#if vehicle.transmission}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%;">Transmission</td>
+          <td style="padding:12px 0; color:#111827;">{{vehicle.transmission}}</td>
+        </tr>
+        {{/if}}
+        {{#if vehicle.fuel}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%;">Fuel</td>
+          <td style="padding:12px 0; color:#111827;">{{vehicle.fuel}}</td>
+        </tr>
+        {{/if}}
+        {{#if vehicle.bodyType}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%;">Body Type</td>
+          <td style="padding:12px 0; color:#111827;">{{vehicle.bodyType}}</td>
+        </tr>
+        {{/if}}
+        {{#if vehicle.drive}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%;">Drive</td>
+          <td style="padding:12px 0; color:#111827;">{{vehicle.drive}}</td>
+        </tr>
+        {{/if}}
         {{#if vehicle.exteriorColour}}
-          <span style="white-space:nowrap;">Exterior colour: <strong>{{vehicle.exteriorColour}}</strong></span>
-        {{else}}{{#if vehicle.colour}}
-          <span style="white-space:nowrap;">Exterior colour: <strong>{{vehicle.colour}}</strong></span>
-        {{/if}}{{/if}}
-      </mj-text>
-    <mj-raw>{{/if}}</mj-raw>
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%;">Exterior Colour</td>
+          <td style="padding:12px 0; color:#111827;">{{vehicle.exteriorColour}}</td>
+        </tr>
+        {{/if}}
+        {{#if vehicle.interiorColour}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%;">Interior Colour</td>
+          <td style="padding:12px 0; color:#111827;">{{vehicle.interiorColour}}</td>
+        </tr>
+        {{/if}}
+      </table>
+
+      {{#if vehicle.factoryOptions}}
+      <table style="width:100%; border-collapse:collapse; margin-top:24px;">
+        <tr>
+          <td colspan="2" style="padding:0 0 16px 0;">
+            <strong style="font-size:16px; color:#111827;">Factory options</strong>
+          </td>
+        </tr>
+        {{#each vehicle.factoryOptions}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%; font-size:14px;">Option {{inc @index}}</td>
+          <td style="padding:12px 0; color:#111827; font-size:14px;">{{this}}</td>
+        </tr>
+        {{/each}}
+      </table>
+      {{/if}}
+
+      {{#if vehicle.dealerAccessories}}
+      <table style="width:100%; border-collapse:collapse; margin-top:24px;">
+        <tr>
+          <td colspan="2" style="padding:0 0 16px 0;">
+            <strong style="font-size:16px; color:#111827;">Dealer fitted accessories</strong>
+          </td>
+        </tr>
+        {{#each vehicle.dealerAccessories}}
+        <tr style="border-top:1px solid #E5E7EB;">
+          <td style="padding:12px 0; color:#6B7280; width:50%; font-size:14px;">Accessory {{inc @index}}</td>
+          <td style="padding:12px 0; color:#111827; font-size:14px;">{{this}}</td>
+        </tr>
+        {{/each}}
+      </table>
+      {{/if}}
+    </mj-text>
   </mj-column>
 </mj-section>
-
