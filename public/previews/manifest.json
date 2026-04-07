@@ -53,8 +53,8 @@
       "url": "/previews/deal-won.example.html",
       "template": "deal-won",
       "variant": "example",
-      "subject": "🎉 You’ve won a deal: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
-      "preheader": "🎉 Deal won — view your purchase order"
+      "subject": "🎉 Deal won, purchase order ready: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
+      "preheader": "🎉 Deal won — your purchase order is ready to approve"
     },
     {
       "file": "dealer-quote-declined.example.html",
@@ -173,8 +173,8 @@
       "url": "/previews/wholesale-trade-in-won.example.html",
       "template": "wholesale-trade-in-won",
       "variant": "example",
-      "subject": "🎉 You've won a trade-in: 2019 Hyundai Tucson Active X (Deal #10512)",
-      "preheader": "You've won a trade-in — sign your purchase order"
+      "subject": "🎉 Trade-in won, purchase order ready: 2019 Hyundai Tucson Active X (Deal #10512)",
+      "preheader": "🎉 Trade-in won — your purchase order is ready to approve"
     }
   ],
   "grouped": {
@@ -244,8 +244,8 @@
         "url": "/previews/deal-won.example.html",
         "template": "deal-won",
         "variant": "example",
-        "subject": "🎉 You’ve won a deal: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
-        "preheader": "🎉 Deal won — view your purchase order"
+        "subject": "🎉 Deal won, purchase order ready: Toyota RAV4 GX Hybrid (2WD) (Deal #10423)",
+        "preheader": "🎉 Deal won — your purchase order is ready to approve"
       }
     ],
     "dealer-quote-declined": [
@@ -392,8 +392,8 @@
         "url": "/previews/wholesale-trade-in-won.example.html",
         "template": "wholesale-trade-in-won",
         "variant": "example",
-        "subject": "🎉 You've won a trade-in: 2019 Hyundai Tucson Active X (Deal #10512)",
-        "preheader": "You've won a trade-in — sign your purchase order"
+        "subject": "🎉 Trade-in won, purchase order ready: 2019 Hyundai Tucson Active X (Deal #10512)",
+        "preheader": "🎉 Trade-in won — your purchase order is ready to approve"
       }
     ]
   }
