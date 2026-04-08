@@ -1,0 +1,51 @@
+<mjml>
+  <mj-head>
+    <mj-include path="../partials/responsive-styles.mjml" />
+    <mj-include path="../partials/head-attributes.mjml" />
+    <mj-preview>You've successfully signed your {{document.name}} for your {{vehicle.make}} {{vehicle.model}}</mj-preview>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+    <mj-include path="../partials/header-customer.mjml" />
+
+    <!-- Intro -->
+    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+      <mj-column>
+        <mj-text padding="0 0 8px 0">Hi {{customer.firstName}},</mj-text>
+        <mj-text>We've received your signed <strong>{{document.name}}</strong> — thank you! Your signature has been recorded and the deal is moving forward.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Vehicle details -->
+    <mj-include path="../partials/vehicle-details-customer.mjml" />
+
+    <!-- What happens next -->
+    <mj-section background-color="#ffffff" padding="24px 24px 0 24px">
+      <mj-column>
+        <mj-text font-size="16px" font-weight="700" padding="0 0 8px 0">What happens next</mj-text>
+        <mj-text padding="0 0 6px 0">Your CarExpert specialist will be in touch with the next steps for your purchase. If you have any questions in the meantime, don't hesitate to reach out.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Specialist contact -->
+    <mj-section background-color="#ffffff" padding="24px 24px 0 24px">
+      <mj-column>
+        <mj-text>Your CarExpert specialist:</mj-text>
+        <mj-text padding="8px 0 0 0" font-size="15px" line-height="20px">
+          <strong>{{specialist.name}}</strong><br/>
+          <a href="tel:{{specialist.phone}}" style="color:#111827; text-decoration:underline;">{{specialist.phone}}</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Sign-off -->
+    <mj-section background-color="#ffffff" padding="0 24px 0 24px">
+      <mj-column>
+        <mj-include path="../partials/sign-off.mjml" />
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="../partials/footer.mjml" />
+
+  </mj-body>
+</mjml>
