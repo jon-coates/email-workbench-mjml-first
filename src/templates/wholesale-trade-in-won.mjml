@@ -2,14 +2,14 @@
   <mj-head>
     <mj-include path="../partials/responsive-styles.mjml" />
     <mj-include path="../partials/head-attributes.mjml" />
-        <mj-preview>You've won a trade-in — sign your purchase order</mj-preview>
+        <mj-preview>🎉 Trade-in won — your purchase order is ready to approve</mj-preview>
   </mj-head>
 
 
   <mj-body background-color="#F9FAFB">
     <mj-include path="../partials/header.mjml" />
 
-    <mj-section padding="24px 24px 0 24px" background-color="#ffffff">
+    <mj-section padding="24px 24px 24px 24px" background-color="#ffffff">
       <mj-column>
         <mj-text font-size="22px" line-height="26px" color="#111827" padding="0 0 8px 0">
           <strong>🎉 You've won a trade-in:</strong>
@@ -22,8 +22,8 @@
         </mj-text>
 
         <mj-text>
-          Great news — your bid has been accepted on the following trade-in vehicle through <strong>CarExpert Exchange</strong>.
-          Please review the details below and sign the purchase order to proceed.
+          Great news — your bid has been accepted and the customer has submitted their intent to purchase.
+          Please review the details below and head into <strong>CarExpert Exchange</strong> to approve the purchase order and send the contracts.
         </mj-text>
 
         <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
@@ -82,31 +82,50 @@
 
           <tr>
             <td style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
-              Customer location
+              Delivery Location
             </td>
             <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
               {{deal.customerLocation}}
             </td>
           </tr>
+
+          <!-- Notes (conditional) -->
+          <mj-raw>{{#if deal.notes}}</mj-raw>
+          <tr>
+            <td style="padding:0 12px 8px 0; vertical-align:top; white-space:nowrap; color:#6b7280; font-size:14px; line-height:20px;">
+              Notes
+            </td>
+            <td style="padding:0 0 8px 0; vertical-align:top; color:#111827; font-size:16px; line-height:20px;">
+              <em>{{deal.notes}}</em>
+            </td>
+          </tr>
+          <mj-raw>{{/if}}</mj-raw>
         </mj-table>
 
-        <mj-button href="{{deal.purchaseOrderUrl}}" align="left" padding="16px 0 0 0">
-          Sign Purchase Order
+        <mj-button href="{{deal.url}}" align="left" padding="16px 0 0 0">
+          Review &amp; Approve Purchase Order
         </mj-button>
         <mj-text padding="8px 0 0" font-size="12px" line-height="16px" color="#6b7280">
           Can&#39;t click the button?
-          <a href="{{deal.purchaseOrderUrl}}" style="color:#6b7280; text-decoration:underline;">Open the purchase order</a>
+          <a href="{{deal.url}}" style="color:#6b7280; text-decoration:underline;">Open the deal</a>
         </mj-text>
 
-        <mj-divider border-width="1px" border-style="solid" border-color="#E5E7EB" padding="16px 0" />
+        <mj-include path="../partials/sign-off.mjml" />
+      </mj-column>
+    </mj-section>
 
-        <mj-text>
-          Our team will be in touch shortly to coordinate collection and finalise the details.
+    <!-- What happens next -->
+    <mj-section background-color="#ffffff" padding="0 24px 24px 24px">
+      <mj-column background-color="#F0FDF4" border="1px solid #86EFAC" border-radius="6px" padding="20px 24px">
+        <mj-text font-size="16px" color="#111827" padding="0 0 8px 0">
+          <strong>What happens next?</strong>
         </mj-text>
-
-        <mj-text padding="16px 0 0 0">
-          Best regards,<br/>
-          The CarExpert Exchange Team
+        <mj-text color="#374151" padding="0 0 4px 0">
+          When you open the deal in Exchange, you'll need to:
+        </mj-text>
+        <mj-text color="#374151" padding="0" line-height="24px">
+          ✅&nbsp; <strong>Approve the Purchase Order</strong><br/>
+          📄&nbsp; <strong>Send the Contracts</strong> for preperation by our team
         </mj-text>
       </mj-column>
     </mj-section>
