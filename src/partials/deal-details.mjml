@@ -111,3 +111,14 @@
     </mj-text>
   </mj-column>
 </mj-section>
+
+<!-- Fleet code banner -->
+<mj-raw>{{#if deal.fleetCode}}</mj-raw>
+<mj-section padding="0 24px 24px 24px" background-color="#ffffff">
+  <mj-column border-left="4px solid #1d4ed8" background-color="#eff6ff" padding="14px 16px" border-radius="6px">
+    <mj-text font-size="14px" line-height="20px" color="#1e40af" padding="0">
+      <strong>Fleet pricing applies to this deal.</strong> When quoting, please reference fleet code <strong style="font-size:15px; letter-spacing:0.04em;">{{deal.fleetCode}}</strong> and apply fleet pricing accordingly.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-raw>{{/if}}</mj-raw>
